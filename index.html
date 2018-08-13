@@ -9,12 +9,32 @@
   	<header class="main-header">
   		<a>
   				<img src="img/gllacy-logo.svg" alt="Логотип магазина" width="150" height="100">
-  		</a>	
+  		</a>
 
   		<nav class="main-navigation">
 
   			<ul class="site-navigation">
-  				<li><a href="catalog.html">Каталог</a></li>
+  				<li>
+            <a href="catalog.html">Каталог</a>
+
+            <ul>
+        			<li>
+      				<a href="#"><span class="weight">Новинки</span></a>
+        			</li>
+        			<li>
+        				<a href="catalog.html">Сливочное</a>
+        			</li>
+        			<li>
+        				<a href="#">Щербеты</a>
+        			</li>
+        			<li>
+        				<a href="#">Фруктовый лед</a>
+        			</li>
+        			<li>
+        				<a href="#">Мелорин</a>
+        			</li>
+        		</ul>
+          </li>
   				<li><a href="delivery_pay.html">Доставка и оплата</a></li>
   				<li><a href="info.html">О Компании</a></li>
   			</ul>
@@ -78,50 +98,58 @@
 			</ul>
 		</section>
 
-		<!-- Добавить изменения в Хиты и Каталог из файла catalog.html --> 
+		<!-- Добавить изменения в Хиты и Каталог из файла catalog.html -->
 
-		<section class="hits">
+		<section class="catalog">
 			<h2 class="visually-hidden">Хиты</h2>
-			<ul class="hits-list">
-				<li class="hits-items">
-					<img src="img/hit-icon.png" alt="Хит" width="50" height="25">
+			<ul class="catalog-list catalog-list-hits">
+				<li class="catalog-item catalog-item-hit">
 					<img src="img/icecream-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="150" height="100">
-					<p class="hits-items-price">
-						310 <img src="img/rubl.png" alt="Рубль" width="15" height="10"> / <span class="weigth">кг</span>
+					<p class="hits-item-price">
+						310 <span class="rubl">Рубль</span> / <span class="weigth">кг</span>
 					</p>
-					<p>
+					<h3>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-					</p>
+					</h3>
+          <a class="button" href="#">
+    				Быстрый просмотр
+    			</a>
 				</li>
-				<li class="hits-items">
-					<img src="img/hit-icon.png" alt="Хит" width="50" height="25">
+				<li class="catalog-item catalog-item-hit">
 					<img src="img/icecream-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="150" height="100">
-					<p class="hits-items-price">
-						380 <img src="img/rubl.png" alt="Рубль" width="15" height="10"> / <span class="weigth">кг</span>
+					<p class="hits-item-price">
+						380 <span class="rubl">Рубль</span> / <span class="weigth">кг</span>
 					</p>
-					<p>
+					<h3>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
-					</p>
+					</h3>
+          <a class="button" href="#">
+    				Быстрый просмотр
+    			</a>
 				</li>
-				<li class="hits-items">
-					<img src="img/hit-icon.png" alt="Хит" width="50" height="25">
+				<li class="catalog-item catalog-item-hit">
 					<img src="img/icecream-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="150" height="100">
-					<p class="hits-items-price">
-						355 <img src="img/rubl.png" alt="Рубль" width="15" height="10"> / <span class="weigth">кг</span>
+					<p class="hits-item-price">
+						355 <span class="rubl">Рубль</span> / <span class="weigth">кг</span>
 					</p>
-					<p>
+					<h3>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-					</p>
+					</h3>
+          <a class="button" href="#">
+    				Быстрый просмотр
+    			</a>
 				</li>
-				<li class="hits-items">
-					<img src="img/hit-icon.png" alt="Хит" width="50" height="25">
+				<li class="catalog-item catalog-item-hit">
 					<img src="img/icecream-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="150" height="100">
-					<p class="hits-items-price">
-						415 <img src="img/rubl.png" alt="Рубль" width="15" height="10"> / <span class="weigth">кг</span>
+					<p class="hits-item-price">
+						415 <span class="rubl">Рубль</span> / <span class="weigth">кг</span>
 					</p>
-					<p>
+					<h3>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-					</p>
+					</h3>
+          <a class="button" href="#">
+    				Быстрый просмотр
+    			</a>
 				</li>
 			</ul>
 		</section>
@@ -181,14 +209,14 @@
   			</ul>
   		</div>
 
-		<div class="footer-menu">
-			<ul>
-				<li><a href="">Для поставщиков</a></li>
-				<li><a href="">Наши документы</a></li>
-				<li><a href="">О производстве</a></li>
-				<li><a href="">Экологические стандарты</a></li>
-			</ul>
-		</div>
+  		<div class="footer-menu">
+  			<ul>
+  				<li><a href="">Для поставщиков</a></li>
+  				<li><a href="">Наши документы</a></li>
+  				<li><a href="">О производстве</a></li>
+  				<li><a href="">Экологические стандарты</a></li>
+  			</ul>
+  		</div>
 
   		<div class="footer-copyright">
   			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy" width="150" height="100"></a>
@@ -199,67 +227,17 @@
 
 	<!-- Модальные окна -->
 
-  	<section class="modal modal-menu">
-  		<h3 class="visually-hidden">Меню</h3>
-  		<ul>
-  			<li>
-				<a href="#"><span class="weight">Новинки</span></a>
-  			</li>
-  			<li>
-  				<a href="catalog.html">Сливочное</a>
-  			</li>
-  			<li>
-  				<a href="#">Щербеты</a>
-  			</li>
-  			<li>
-  				<a href="#">Фруктовый лед</a>
-  			</li>
-  			<li>
-  				<a href="#">Мелорин</a>
-  			</li>
-  		</ul>
-  	</section>
-
-  	<section class="modal modal-login">
-  		<h3 class="visually-hidden">Логин</h3>
+  	<section class="modal modal-feedback">
+  		<h2>Мы обязательно вам ответим!</h2>
   		<!-- Место для формы -->
-  		<span class="button">Войти</span>
-  		<ul>
-  			<li>
-  				<p class="login-forget">
-  					<a href="#">
-  						Забыли пароль
-  					</a>
-  				</p>
-  			</li>
-  			<li>
-  				<p class="login-new">
-  					<a href="#">
-  						Новая регистрация
-  					</a>
-  				</p>
-  			</li>
-  		</ul>
+  		<span class="feedback-form-name">Как вас зовут?</span>
+  		<span class="feedback-form-mail">Ваша почта для ответа?</span>
+  		<span class="feedback-form-message">Напишите что-нибудь...</span>
+  		<a class="button" href="#">
+  				Отправить
+  		</a>
+      <button class="modal-close">Закрыть</button>
   	</section>
-
-  	<section class="modal modal-search">
-  		<h3 class="visually-hidden">Поиск</h3>
-  		<span class="search-form">
-  			<!-- Место для формы -->
-  			Что ищем?
-  		</span>
-  	</section>
-
-	<section class="modal modal-feedback">
-		<h2>Мы обязательно вам ответим!</h2>
-		<!-- Место для формы -->
-		<span class="feedback-form-name">Как вас зовут?</span>
-		<span class="feedback-form-mail">Ваша почта для ответа?</span>
-		<span class="feedback-form-message">Напишите что-нибудь...</span>
-		<a class="button" href="#">
-				Отправить
-		</a>
-	</section>
 
   </body>
 </html>
