@@ -28,8 +28,31 @@
   				<li><a href="info.html">О Компании</a></li>
   			</ul>
   			<ul class="user-navigation">
-  				<li><span class="button search">Поиск</span></li>
-  				<li><a href="#">Вход</a></li>
+  				<li>
+            <span class="button search">Поиск</span>
+            <form class="search-form" method="post" action="http://echo.htmlacademy.ru">
+              <p>
+                <input class="hover-search-form" id="hover-search" type="text" name="search" placeholder="Что ищем?">
+                <label class="visually-hidden" for="hover-search">Поиск</label>
+              </p>
+            </form>
+          </li>
+  				<li>
+            <a href="#">Вход</a>
+            <form class="login-form" method="post" action="http://echo.htmlacademy.ru">
+              <p>
+                <input class="modal-login-form" id="form-email-login" type="email" name="mail" placeholder="Электронная почта">
+                <label class="visually-hidden" for="form-email-login">Электронная почта</label>
+              </p>
+              <p>
+                <input class="modal-login-form" id="password-login" type="password" name="pass" placeholder="Пароль">
+                <label class="visually-hidden" for="password-login">Пароль</label>
+              </p>
+              <button class="enter-button" type="submit">Войти</button>
+              <a class="forget" href="#">Забыли пароль?</a>
+              <a class="newreg" href="#">Новая регистрация</a>
+            </form>
+          </li>
   				<li><a href="#">Пусто</a></li>
   			</ul>
   		</nav>
@@ -131,8 +154,13 @@
 		<section class="distribution">
 			<h2 class="visually-hidden">Подписка на рассылку</h2>
 			<p class="distribution-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-			<span class="email-form">Электронная почта</span>
-			<span class="button">Отправить</span>
+      <form class="email-form" action="http://echo.htmlacademy.ru" method="post">
+        <p>
+          <input class="distribution-login-form" id="distribution-email-login" type="email" name="mail" placeholder="Электронная почта">
+          <label class="visually-hidden" for="distribution-email-login">Электронная почта</label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
 		</section>
 
 		<section class="contacts">
@@ -180,12 +208,21 @@
 
   	<section class="modal modal-feedback">
   		<h2>Мы обязательно вам ответим!</h2>
-  		<!-- Место для формы -->
-  		<span class="feedback-form-name">Как вас зовут?</span>
-  		<span class="feedback-form-mail">Ваша почта для ответа?</span>
-  		<span class="feedback-form-message">Напишите что-нибудь...</span>
-  		<a class="button" href="#">Отправить</a>
-      <button class="modal-close">Закрыть</button>
+  		<form class="feedback-form" method="post" action="http://echo.htmlacademy.ru">
+        <p>
+          <input class="feedback-form-name" id="feedback-name" type="text" name="yourname" placeholder="Как вас зовут?">
+          <label class="visually-hidden" for="feedback-name">Введите ваше имя</label>
+        </p>
+        <p>
+          <input class="feedback-form-mail" id="feedback-mail" type="email" name="yourmail" placeholder="Ваша почта для ответа?">
+          <label class="visually-hidden" for="feedback-mail">Введите вашу почту</label>
+        </p>
+        <p>
+          <textarea class="feedback-form-message" id="feedback-message" name="sometext" placeholder="Напишите что-нибудь..."></textarea>
+          <label class="visually-hidden" for="feedback-message">Оставьте отзыв</label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
   	</section>
 
   </body>
