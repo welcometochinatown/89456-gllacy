@@ -29,24 +29,24 @@
   			</ul>
   			<ul class="user-navigation">
   				<li>
-            <button type="button" name="button-search">Поиск</button>
+            <a href="#">Поиск</a>
             <form class="search-form" method="post" action="http://echo.htmlacademy.ru">
               <p>
-                <input class="popup-search-form" id="popup-search" type="text" name="search" placeholder="Что ищем?">
-                <label class="visually-hidden" for="popup-search">Поиск</label>
+                <input class="search-input" id="popup-search" type="search" name="search" placeholder="Что ищем?">
+                <label class="visually-hidden search-label" for="popup-search">Поиск</label>
               </p>
             </form>
           </li>
   				<li>
-            <button type="button" name="button-enter">Вход</button>
+            <a href="#">Вход</a>
             <form class="login-form" method="post" action="http://echo.htmlacademy.ru">
               <p>
-                <input class="popup-login-form" id="form-email-login" type="email" name="mail" placeholder="Электронная почта">
-                <label class="visually-hidden" for="form-email-login">Электронная почта</label>
+                <input class="login-input" id="form-email-login" type="email" name="mail" placeholder="Электронная почта">
+                <label class="visually-hidden login-label" for="form-email-login">Электронная почта</label>
               </p>
               <p>
-                <input class="popup-login-form" id="password-login" type="password" name="pass" placeholder="Пароль">
-                <label class="visually-hidden" for="password-login">Пароль</label>
+                <input class="login-input" id="password-login" type="password" name="pass" placeholder="Пароль">
+                <label class="visually-hidden login-label" for="password-login">Пароль</label>
               </p>
               <button class="enter-button" type="submit">Войти</button>
               <a class="forget" href="#">Забыли пароль?</a>
@@ -208,17 +208,18 @@
 
   	<section class="modal modal-feedback">
   		<h2>Мы обязательно вам ответим!</h2>
+      <button class="modal-close">Закрыть</button>
   		<form class="feedback-form" method="post" action="http://echo.htmlacademy.ru">
         <p>
-          <input class="feedback-form-name" id="feedback-name" type="text" name="yourname" placeholder="Как вас зовут?">
+          <input class="feedback-form-name" id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
           <label class="visually-hidden" for="feedback-name">Введите ваше имя</label>
         </p>
         <p>
-          <input class="feedback-form-mail" id="feedback-mail" type="email" name="yourmail" placeholder="Ваша почта для ответа?">
+          <input class="feedback-form-mail" id="feedback-mail" type="email" name="feedback-mail" placeholder="Ваша почта для ответа?">
           <label class="visually-hidden" for="feedback-mail">Введите вашу почту</label>
         </p>
         <p>
-          <textarea class="feedback-form-message" id="feedback-message" name="sometext" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="feedback-form-message" id="feedback-message" name="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
           <label class="visually-hidden" for="feedback-message">Оставьте отзыв</label>
         </p>
         <button class="button" type="submit">Отправить</button>
