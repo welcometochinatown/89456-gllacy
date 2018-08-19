@@ -29,7 +29,7 @@
   			</ul>
   			<ul class="user-navigation">
   				<li>
-            <span class="button search">Поиск</span>
+            <button type="button" name="button-search">Поиск</button>
             <form class="search-form" method="post" action="http://echo.htmlacademy.ru">
               <p>
                 <input class="hover-search-form" id="hover-search" type="text" name="search" placeholder="Что ищем?">
@@ -38,7 +38,7 @@
             </form>
           </li>
   				<li>
-            <a href="#">Вход</a>
+            <button type="button" name="button-enter">Вход</button>
             <form class="login-form" method="post" action="http://echo.htmlacademy.ru">
               <p>
                 <input class="modal-login-form" id="email-login" type="email" name="mail" placeholder="Электронная почта">
@@ -132,20 +132,20 @@
           <legend>Жирность:</legend>
           <ul>
             <li>
-              <input class="filter-input filter-input-radio" type="radio" name="zero" id="filter-zero">
+              <input class="filter-input filter-input-radio" type="radio" name="radio-group" id="filter-zero">
               <label for="filter-zero">0%</label>
             </li>
             <li>
-              <input class="filter-input filter-input-radio" type="radio" name="less-then-10" id="filter-less-then-10" checked>
-              <label for="filter-less-then-10">до 10%</label>
+              <input class="filter-input filter-input-radio" type="radio" name="radio-group" id="less-then-10" checked>
+              <label for="less-then-10">до 10%</label>
             </li>
             <li>
-              <input class="filter-input filter-input-radio" type="radio" name="less-then-30" id="filter-less-then-30">
-              <label for="filter-less-then-30">до 30</label>%
+              <input class="filter-input filter-input-radio" type="radio" name="radio-group" id="less-then-30">
+              <label for="less-then-30">до 30</label>%
             </li>
             <li>
-              <input class="filter-input filter-input-radio" type="radio" name="under-30" id="filter-under-30">
-              <label for="filter-under-30">выше 30</label>%
+              <input class="filter-input filter-input-radio" type="radio" name="radio-group" id="under-30">
+              <label for="under-30">выше 30</label>%
             </li>
           </ul>
         </fieldset>
