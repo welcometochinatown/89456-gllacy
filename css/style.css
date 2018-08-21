@@ -412,9 +412,19 @@ a {
   background-color: #f8f7f4;
 }
 
+/* page-title */
+.page-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
 /* breadcrumbs */
 .breadcrumbs a {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -425,7 +435,7 @@ a {
 }
 
 .breadcrumbs-current {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -435,7 +445,50 @@ a {
   text-decoration: none;
 }
 
-/* */
-/* */
+/* filters */
+.filters {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.filters legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.filter-sort-form {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #aabab0;
+}
+
+.filter-form button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #aabab0;
+}
+/* pagination list */
+.pagination-list a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
 /* */
 /* */
