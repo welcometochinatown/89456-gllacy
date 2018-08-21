@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,7 +21,7 @@
       <ul class="site-navigation">
         <li>
           <a href="catalog.html">Каталог</a>
-          <ul>
+          <ul class="inner-site-navigation">
             <li><a class="noveltys" href="#">Новинки</a></li>
             <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -50,7 +53,7 @@
               <input class="login-input" id="password-login" type="password" name="password-login" placeholder="Пароль">
               <label class="visually-hidden login-label" for="password-login">Пароль</label>
             </p>
-            <button class="enter-button" type="submit">Войти</button>
+            <button class="button" type="submit">Войти</button>
             <a class="forget" href="#">Забыли пароль?</a>
             <a class="newreg" href="#">Новая регистрация</a>
           </form>
@@ -171,7 +174,7 @@
         <p>Адрес главного офиса и оффлайн-магазина:</p>
         <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
         <p>Для заказов по телефону:</p>
-        <a href="tel:+88124502525">8 812 450-25-25</a>
+        <a class="tel" href="tel:+88124502525">8 812 450-25-25</a>
         <p>(с 10 до 20 ежедневно)</p>
         <a class="button" href="#">Форма обратной связи</a>
       </div>

@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,7 +21,7 @@
       <ul class="site-navigation">
         <li>
           <a href="#">Каталог</a>
-          <ul>
+          <ul class="inner-site-navigation">
             <li><a class="noveltys" href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -50,7 +53,7 @@
               <input class="login-input" id="password-login" type="password" name="password-login" placeholder="Пароль">
               <label class="visually-hidden login-label" for="password-login">Пароль</label>
             </p>
-            <button class="enter-button" type="submit">Войти</button>
+            <button class="button" type="submit">Войти</button>
             <a class="forget" href="#">Забыли пароль?</a>
             <a class="newreg" href="#">Новая регистрация</a>
           </form>
