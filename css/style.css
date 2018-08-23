@@ -11,13 +11,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-
   background-color: #849d8f;
 }
 
@@ -64,7 +62,6 @@ a {
 .site-navigation a:hover {
   color: #323232;
   text-decoration: none;
-
   background-color: #f7f6f3;
 }
 
@@ -72,7 +69,6 @@ a {
   font-weight: 700;
   color: #333333;
   text-decoration: none;
-
   background-color: #f8f7f4;
 }
 
@@ -102,13 +98,11 @@ a {
   font-size: 14px;
   line-height: 16px;
   color: #323232;
-
   text-decoration: none;
 }
 
 .inner-site-navigation .creamy {
   color: #ffffff;
-
   background-color: #d07058;
 }
 
@@ -125,7 +119,6 @@ a {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-
   list-style: none;
 }
 
@@ -135,21 +128,19 @@ a {
 }
 
 input[type="search"]::-webkit-input-placeholder,
-.login-form input[type="email"]::-webkit-input-placeholder,
-input[type="password"]::-webkit-input-placeholder {
+.login-form input[type="email"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-	color: #999999;
+  color: #999999;
 }
 
 input[type="search"]::-moz-placeholder,
-.login-form input[type="email"]::-moz-placeholder,
-input[type="password"]::-moz-placeholder {
+.login-form input[type="email"]::-moz-placeholder, input[type="password"]::-moz-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-	color: #999999;
+  color: #999999;
 }
 
 .search-form .search-input,
@@ -158,7 +149,6 @@ input[type="password"]::-moz-placeholder {
   font-size: 16px;
   line-height: 24px;
   color: #323232;
-
   background-color: #ffffff;
 }
 
@@ -171,7 +161,6 @@ input[type="password"]::-moz-placeholder {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(277, 77, 55, 0.3);
 }
-
 
 .search-form input:hover,
 .login-form input:hover,
@@ -192,7 +181,6 @@ input[type="password"]::-moz-placeholder {
   font-size: 13px;
   line-height: 24px;
   color: #323232;
-
   background-color: #f8f7f4;
 }
 
@@ -201,7 +189,6 @@ input[type="password"]::-moz-placeholder {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-
   background-color: #e84e37;
   border: none;
 }
@@ -227,6 +214,7 @@ input[type="password"]::-moz-placeholder {
 }
 
 /* promo slider */
+
 .promo-slider h3 {
   font-weight: 700;
   font-size: 60px;
@@ -253,6 +241,7 @@ input[type="password"]::-moz-placeholder {
 */
 
 /* actions */
+
 .actions-item h3 {
   font-weight: 700;
   font-size: 35px;
@@ -278,6 +267,7 @@ input[type="password"]::-moz-placeholder {
 .actions-list .actions-chocolate {
   background-image: url("../img/chocolate-bg.jpg");
 }
+
 /* catalog */
 
 .catalog-list {
@@ -311,11 +301,10 @@ input[type="password"]::-moz-placeholder {
 */
 
 .catalog-list a:first-child:hover,
-.catalog-list a:first-child:active  {
+.catalog-list a:first-child:active {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
-
 
 .catalog-list .catalog-picture {
   font-weight: 500;
@@ -329,14 +318,15 @@ input[type="password"]::-moz-placeholder {
   background-image: url("../img/ruble.svg");
   background-repeat: no-repeat;
 }
+
 /* features */
+
 .features ul {
   list-style: none;
 }
 
 .features {
   color: #323232;
-
   background-image: url("../img/waffle-pattern.jpg");
 }
 
@@ -347,8 +337,8 @@ input[type="password"]::-moz-placeholder {
   color: #323232;
 }
 
-
 /* blog */
+
 .blog {
   background-image: url("../img/strawberry-bg.jpg");
 }
@@ -368,36 +358,33 @@ input[type="password"]::-moz-placeholder {
   border-bottom: 1px solid #323232;
 }
 
-.blog a:hover,
-.blog a:active {
+.blog a:hover, .blog a:active {
   color: #e84d37;
 }
 
 /* distribution */
+
 .distribution {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
   color: #5a5a5a;
-
   background-color: #f8f7f4;
 }
 
 .distribution p {
   color: #5a5a5a;
-
   background-color: #f8f7f4;
 }
 
 .distribution-login-form {
   background-color: #f8f7f4;
 }
+
 /* contacts */
+
 .contacts {
   font-size: 14px;
   line-height: 20px;
   color: #323232;
-
   background-color: #fffffe;
 }
 
@@ -412,7 +399,9 @@ input[type="password"]::-moz-placeholder {
   line-height: 24px;
   color: #323232;
 }
+
 /* footer-social */
+
 .footer-menu {
   font-weight: 700;
   font-size: 13px;
@@ -424,8 +413,7 @@ input[type="password"]::-moz-placeholder {
   list-style: none;
 }
 
-.footer-social a {
-}
+.footer-social a {}
 
 .footer-social .social-twitter {
   background-image: url("../img/twitter.svg");
@@ -448,10 +436,10 @@ input[type="password"]::-moz-placeholder {
 }
 
 /* footer-menu */
+
 .footer-menu ul {
   list-style: none;
 }
-
 
 .footer-menu a {
   font-weight: 400;
@@ -470,6 +458,7 @@ input[type="password"]::-moz-placeholder {
 }
 
 /* footer-copyright */
+
 .footer-copyright {
   font-weight: 400;
   font-size: 12px;
@@ -481,13 +470,14 @@ input[type="password"]::-moz-placeholder {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 /* modal */
+
 .modal-feedback {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #999999;
-
   background-color: #f8f7f4;
 }
 
@@ -496,41 +486,36 @@ input[type="password"]::-moz-placeholder {
   font-size: 24px;
   line-height: 28px;
   color: #323232;
-
   background-color: #f8f7f4;
 }
 
-.feedback-form .feedback-form-name,
-.feedback-form .feedback-form-mail,
-.feedback-form .feedback-form-message {
-  font-weight: 500;
+.feedback-form .feedback-form-input {
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: #323232;
-
   background-color: #ffffff;
 }
 
 input[type="text"]::-webkit-input-placeholder,
-.feedback-form input[type=email]::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+.feedback-form input[type=email]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-weight: 400;
-	color: #999999;
+  color: #999999;
 }
+
 input[type="text"]::-moz-placeholder,
-.feedback-form input[type=email]::-moz-placeholder,
-textarea::-moz-placeholder {
+.feedback-form input[type=email]::-moz-placeholder, textarea::-moz-placeholder {
   font-weight: 400;
-	color: #999999;
+  color: #999999;
 }
 
 /* modal cart */
+
 .modal-card {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
-
   background-color: #f8f7f4;
 }
 
@@ -539,7 +524,6 @@ textarea::-moz-placeholder {
   font-size: 13px;
   line-height: 16px;
   color: #999999;
-
   background-color: #f8f7f4;
 }
 
@@ -548,11 +532,11 @@ textarea::-moz-placeholder {
   font-size: 15px;
   line-height: 18px;
   color: #323232;
-
   background-color: #f8f7f4;
 }
 
 /* page-title */
+
 .page-title {
   font-weight: 700;
   font-size: 35px;
@@ -561,6 +545,7 @@ textarea::-moz-placeholder {
 }
 
 /* breadcrumbs */
+
 .breadcrumbs a {
   font-weight: 400;
   font-size: 14px;
@@ -584,6 +569,7 @@ textarea::-moz-placeholder {
 }
 
 /* filters */
+
 .filters {
   font-weight: 500;
   font-size: 16px;
@@ -601,7 +587,6 @@ textarea::-moz-placeholder {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-
   background-color: rgba(248, 247, 244, 0.2);
 }
 
@@ -614,23 +599,22 @@ textarea::-moz-placeholder {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-
   background-color: #aabab0;
 }
 
 .filter-form button:focus,
 .filter-form button:hover {
   color: #323232;
-
   background-color: #fbfcfb;
 }
 
 .filter-form button:active {
   color: #323232;
-
   background-color: #eaeaea;
 }
+
 /* pagination list */
+
 .pagination-list {
   list-style: none;
 }
@@ -644,14 +628,14 @@ textarea::-moz-placeholder {
 
 .pagination-item a:hover {
   color: #ffffff;
-
   background-color: #89a193;
 }
 
 .pagination-item a:active {
   color: #323232;
-
   background-color: #ffffff;
 }
+
 /* */
+
 /* */
