@@ -36,6 +36,18 @@ a {
   overflow: hidden;
 }
 
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-navigation {
   font-weight: 700;
   line-height: 18px;
@@ -169,17 +181,11 @@ a {
   border-bottom: 1px solid rgba(277, 77, 55, 0.3);
 }
 
-.search-form input:hover,
-.login-form input:hover,
-.email-form input:hover,
-.feedback-form input:hover {
+.form-input:hover {
   border-color: rgba(154, 154, 154, 0.5);
 }
 
-.search-form input:focus,
-.login-form input:focus,
-.email-form input:focus,
-.feedback-form input:focus {
+.form-input:focus {
   border-color: #c7c6c5;
 }
 
@@ -188,8 +194,6 @@ a {
   font-size: 13px;
   line-height: 24px;
   color: #323232;
-
-  background-color: #f8f7f4;
 }
 
 .header-contacts p {
@@ -274,13 +278,13 @@ a {
   line-height: 45px;
 }
 
-.catalog-list a:first-child:hover,
-.catalog-list a:first-child:active {
+.catalog-name:hover,
+.catalog-nam:active {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
-.catalog-list .catalog-name {
+.catalog-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -351,6 +355,7 @@ a {
   color: #323232;
 
   background-image: url("../img/map.jpg");
+  background-color: #ede6cd;
 }
 
 .adress {
@@ -532,26 +537,21 @@ a {
   line-height: 24px;
   color: #ffffff;
 
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 1px 2px 0px rgb(172, 16, 0);
+  text-shadow: 0 2px 5px rgba(160,32,11,.76);
   border: none;
 }
 
-.button.focus,
+.button:focus,
 .button:hover {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+  background-image: linear-gradient(to top, #f26843, #f26843);
+  box-shadow: 0px 2px 2px 0px rgb(172, 16, 0);
 }
 
 .button:active {
-  background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  background-image: linear-gradient(to top, #f26843, #e74a35);
+  box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
 }
 
 .slider-button {
