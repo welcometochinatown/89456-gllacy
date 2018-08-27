@@ -36,16 +36,12 @@ a {
   overflow: hidden;
 }
 
-.actions {
+.main-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -58,11 +54,16 @@ a {
   list-style: none;
 }
 
+.user-navigation {
+  width: 267px;
+}
+
 .user-navigation a {
   color: #ffffff;
 }
 
 .site-navigation {
+  width: 406px;
   list-style: none;
 }
 
@@ -196,6 +197,10 @@ a {
   color: #323232;
 }
 
+.header-contacts {
+  width: 267px;
+}
+
 .header-contacts p {
   font-weight: 700;
   font-size: 14px;
@@ -210,6 +215,16 @@ a {
   color: #ffffff;
 }
 
+.container {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promo-slider {
+  width: 1045px;
+}
+
 .promo-slider h3 {
   font-weight: 700;
   font-size: 60px;
@@ -219,14 +234,28 @@ a {
 
 .first-slide {
   background-image: url("../img/icecream-main-1.png");
+  background-repeat: no-repeat;
 }
 
 .second-slide {
   background-image: url("../img/icecream-main-2.png");
+  background-repeat: no-repeat;
 }
 
 .third-slide {
   background-image: url("../img/icecream-main-3.png");
+  background-repeat: no-repeat;
+}
+
+.actions-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.actions-item {
+  width: 560px;
 }
 
 .actions-item h3 {
@@ -249,16 +278,36 @@ a {
 
 .actions-list .actions-strawberry {
   background-image: url("../img/raspberry-bg.jpg");
+  background-repeat: no-repeat;
   background-color: #aa0f30;
 }
 
 .actions-list .actions-chocolate {
   background-image: url("../img/chocolate-bg.jpg");
+  background-repeat: no-repeat;
   background-color: #4f3226;
 }
 
-.catalog-list {
+
+.catalog-list-hits {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  padding: 0;
   list-style: none;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  width: 267px;
 }
 
 .catalog-list p {
@@ -304,8 +353,12 @@ a {
 }
 
 .features {
+  width: 1146px;
+  margin-bottom: 40px;
+
   color: #323232;
   background-image: url("../img/waffle-pattern.jpg");
+  background-repeat: no-repeat;
   background-color: #e9dcbf;
 }
 
@@ -316,8 +369,19 @@ a {
   color: #323232;
 }
 
+.wrapper-blog-distribution {
+  margin-bottom: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .blog {
+  width: 560px;
+
   background-image: url("../img/strawberry-bg.jpg");
+  background-repeat: no-repeat;
   background-color: #ffffff;
 }
 
@@ -343,6 +407,8 @@ a {
 }
 
 .distribution {
+  width: 560px;
+
   font-weight: 700;
   color: #5a5a5a;
 
@@ -350,15 +416,21 @@ a {
 }
 
 .contacts {
+  width: 100%;
+  min-height: 430px;
+
   font-size: 14px;
   line-height: 20px;
   color: #323232;
 
   background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
   background-color: #ede6cd;
 }
 
 .adress {
+  width: 300px;
+
   background-color: #ffffff;
 }
 
@@ -370,7 +442,23 @@ a {
   color: #323232;
 }
 
+.main-footer {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper-footer {
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer-menu {
+  width: 560px;
+
   font-weight: 700;
   font-size: 13px;
   line-height: 18px;
@@ -382,6 +470,8 @@ a {
 }
 
 .footer-social {
+  width: 267px;
+
   font-size: 0;
 }
 
@@ -417,6 +507,10 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.footer-menu .footer-menu-item {
+  font-weight: 700;
+}
+
 .footer-menu a:hover,
 .footer-menu a:active,
 .footer-copyright .footer-link:hover,
@@ -427,6 +521,8 @@ a {
 
 
 .footer-copyright {
+  width: 267px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
