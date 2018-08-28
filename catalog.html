@@ -11,27 +11,28 @@
 
 <body>
 
-  <header class="main-header">
+  <header class="main-header container">
+    <div class="header-wrapper">
+      <a href="index.html">
+    	  <img src="img/logo.svg" alt="Логотип магазина" width="154" height="64">
+    	</a>
 
-    <a href="index.html">
-  	  <img src="img/logo.svg" alt="Логотип магазина" width="154" height="64">
-  	</a>
-
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li>
-          <a class="on-catalog" href="#">Каталог</a>
-          <ul class="inner-site-navigation">
-            <li><a class="noveltys" href="#">Новинки</a></li>
-            <li><a class="active-link">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
-          </ul>
-        </li>
-        <li><a href="delivery_pay.html">Доставка и оплата</a></li>
-        <li><a href="info.html">О Компании</a></li>
-      </ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li>
+            <a class="on-catalog" href="#">Каталог</a>
+            <ul class="inner-site-navigation">
+              <li><a class="noveltys" href="#">Новинки</a></li>
+              <li><a class="active-link">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li><a href="delivery_pay.html">Доставка и оплата</a></li>
+          <li><a href="info.html">О Компании</a></li>
+        </ul>
+      </nav>
       <ul class="user-navigation">
         <li>
           <a href="#">Поиск</a>
@@ -96,18 +97,15 @@
           </div>
         </li>
       </ul>
-    </nav>
+      <div class="header-contacts">
+        <p>С 10 до 20, ежедневно</p>
+        <a href="tel:+88124502525">8 812 450-25-25</a>
+      </div>
+    </div>
 
   </header>
 
-  <div class="header-contacts-wrapper">
-    <div class="header-contacts">
-      <p>С 10 до 20, ежедневно</p>
-      <a href="tel:+88124502525">8 812 450-25-25</a>
-    </div>
-  </div>
-
-  <main class="container">
+  <main class="catalog container">
 
     <h1 class="page-title">Сливочное мороженое</h1>
 
@@ -132,10 +130,10 @@
         </fieldset>
         <fieldset>
           <legend>Цена: 100 руб. - 500 руб.</legend>
-            <div>
-              <label for="range" class="visually-hidden">Сортировка по цене</label>
-              <input type="range" id="range" min="100" max="500" value="200" name="range">
-            </div>
+          <div>
+            <label for="range" class="visually-hidden">Сортировка по цене</label>
+            <input type="range" id="range" min="100" max="500" value="200" name="range">
+          </div>
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
@@ -277,7 +275,7 @@
 
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <div class="wrapper-footer">
       <div class="footer-social">
         <ul>

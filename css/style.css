@@ -36,16 +36,12 @@ a {
   overflow: hidden;
 }
 
-.main-header {
+.header-wrapper {
   display: flex;
-  min-width: 900px;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .main-navigation {
-  display: flex;
-  width: 992px;
   font-weight: 700;
   line-height: 18px;
   color: #ffffff;
@@ -57,12 +53,9 @@ a {
 
 .site-navigation {
   width: 406px;
-  list-style: none;
-}
+  margin-right: 319px;
 
-.user-navigation {
-  width: 267px;
-  margin-left: auto;
+  list-style: none;
 }
 
 .user-navigation a {
@@ -99,6 +92,8 @@ a {
 }
 
 .inner-site-navigation {
+  position: absolute;
+
   list-style: none;
 }
 
@@ -126,6 +121,8 @@ a {
 }
 
 .user-navigation {
+  width: 267px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -136,6 +133,8 @@ a {
 
 .user-navigation .search-form,
 .user-navigation .login-form {
+  position: absolute;
+
   background-color: #f8f7f4;
 }
 
@@ -199,15 +198,8 @@ a {
   color: #323232;
 }
 
-.header-contacts-wrapper {
-  min-width: 900px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .header-contacts {
-  width: 267px;
-  float: right;
+  margin-left: auto;
 }
 
 .header-contacts p {
@@ -225,13 +217,10 @@ a {
 }
 
 .container {
-  min-width: 900px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.promo-slider {
-  width: 1045px;
+    margin: 0 auto;
+    padding: 0 27px;
+    width: 1200px;
+    position: relative;
 }
 
 .promo-slider h3 {
@@ -258,7 +247,7 @@ a {
 
 .actions-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 40px;
   padding: 0;
 }
@@ -297,18 +286,9 @@ a {
   background-color: #4f3226;
 }
 
-
-.catalog-list-hits {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 40px;
-  padding: 0;
-  list-style: none;
-}
-
 .catalog-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 40px;
   padding: 0;
@@ -358,16 +338,20 @@ a {
 }
 
 .features ul {
+  display: flex;
   list-style: none;
 }
 
+.features li {
+  width: 560px;
+}
+
 .features {
-  width: 1146px;
   margin-bottom: 40px;
 
   color: #323232;
   background-image: url("../img/waffle-pattern.jpg");
-  background-repeat: no-repeat;
+  background-position: 0 0;
   background-color: #e9dcbf;
 }
 
@@ -378,12 +362,10 @@ a {
   color: #323232;
 }
 
-.wrapper-blog-distribution {
+.wrapper-middle {
   margin-bottom: 40px;
-  padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .blog {
@@ -425,7 +407,6 @@ a {
 }
 
 .contacts {
-  width: 100%;
   min-height: 430px;
 
   font-size: 14px;
@@ -438,6 +419,7 @@ a {
 }
 
 .adress {
+  position: absolute;
   width: 300px;
 
   background-color: #ffffff;
@@ -452,8 +434,7 @@ a {
 }
 
 .main-footer {
-  min-width: 900px;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -560,6 +541,7 @@ a {
 }
 
 .modal-card {
+  position: absolute;
   width: 540px;
 
   font-weight: 400;
@@ -655,22 +637,24 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
-  background-image: linear-gradient(to top, #e74a35, #f26843);
-  box-shadow: 0px 1px 2px 0px rgb(172, 16, 0);
-  text-shadow: 0 2px 5px rgba(160,32,11,.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
 }
 
 .button:focus,
 .button:hover {
-  background-image: linear-gradient(to top, #f26843, #f26843);
-  box-shadow: 0px 2px 2px 0px rgb(172, 16, 0);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
-  background-image: linear-gradient(to top, #f26843, #e74a35);
-  box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slider-button {
@@ -702,6 +686,7 @@ a {
 }
 
 .pagination-list {
+  text-align: right;
   list-style: none;
 }
 
@@ -710,6 +695,10 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.pagination-item {
+  display: inline-block;
 }
 
 .pagination-item a:hover {
