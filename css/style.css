@@ -339,7 +339,10 @@ a {
 
 .features ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
+  padding: 0 0;
 }
 
 .features li {
@@ -347,6 +350,7 @@ a {
 }
 
 .features {
+  height: 306px;
   margin-bottom: 40px;
 
   color: #323232;
@@ -407,6 +411,7 @@ a {
 }
 
 .contacts {
+  width: 100%;
   min-height: 430px;
 
   font-size: 14px;
@@ -486,7 +491,14 @@ a {
 }
 
 .footer-menu ul {
+  padding: 0 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+}
+
+.footer-menu li {
+  width: 267px;
 }
 
 .footer-menu a {
