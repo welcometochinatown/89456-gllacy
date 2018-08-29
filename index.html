@@ -37,7 +37,7 @@
 
       <ul class="user-navigation">
         <li>
-          <a href="#">Поиск</a>
+          <a class="search" href="#">Поиск</a>
           <form class="search-form" method="post" action="http://echo.htmlacademy.ru">
             <p>
               <input class="form-input" id="popup-search" type="search" name="search" placeholder="Что ищем?">
@@ -46,7 +46,7 @@
           </form>
         </li>
         <li>
-          <a href="#">Вход</a>
+          <a class="login"  href="#">Вход</a>
           <form class="login-form" method="post" action="http://echo.htmlacademy.ru">
             <p>
               <input class="form-input" id="email-login" type="email" name="email-login" placeholder="Электронная почта">
@@ -61,7 +61,7 @@
             <a class="newreg" href="#">Новая регистрация</a>
           </form>
         </li>
-        <li><a href="#">Пусто</a></li>
+        <li><a class="empty" href="#">Пусто</a></li>
       </ul>
 
       <div class="header-contacts">
@@ -145,7 +145,9 @@
       </ul>
     </section>
 
-    <section class="features container">
+    <div class="container">
+
+    <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <h3>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
       <ul>
@@ -156,7 +158,7 @@
       </ul>
     </section>
 
-    <div class="wrapper-middle container">
+    <div class="wrapper-middle">
       <article class="blog">
         <h2>Новое в нашем блоге</h2>
         <a href="blog.html">10 способов сервировки фрутковых щербетов к столу</a>
@@ -173,6 +175,7 @@
           <button class="button submit-button" type="submit">Отправить</button>
         </form>
       </section>
+    </div>
     </div>
 
     <section class="contacts">

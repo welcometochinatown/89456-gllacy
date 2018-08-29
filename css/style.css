@@ -39,6 +39,9 @@ a {
 .header-wrapper {
   display: flex;
   flex-wrap: wrap;
+
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .main-navigation {
@@ -58,17 +61,41 @@ a {
   list-style: none;
 }
 
+.site-navigation > li {
+  display: inline-block;
+  position: relative;
+}
+
 .user-navigation a {
   color: #ffffff;
 }
 
+.search {
+
+}
+
+.login {
+
+}
+
+.empty {
+
+}
+
 .site-navigation a {
+  width: 87px;
+  height: 32px;
   color: #ffffff;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.site-navigation > li:hover .inner-site-navigation {
+  display: block;
+}
+
 .site-navigation a:hover {
+  display: block;
   color: #323232;
   text-decoration: none;
 
@@ -79,6 +106,7 @@ a {
   font-weight: 700;
   color: #333333;
   text-decoration: none;
+  box-shadow: inset 0px 2px 1px 0 #696969;
 
   background-color: #f8f7f4;
 }
@@ -93,6 +121,12 @@ a {
 
 .inner-site-navigation {
   position: absolute;
+  display: none;
+  width: 143px;
+  height: 171px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
   list-style: none;
 }
@@ -131,10 +165,18 @@ a {
   list-style: none;
 }
 
+.user-navigation > li {
+  display: inline-block;
+  position: relative;
+}
+
 .user-navigation .search-form,
 .user-navigation .login-form {
+  display: none;
   position: absolute;
 
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
 }
 
@@ -250,10 +292,14 @@ a {
   justify-content: space-between;
   margin-bottom: 40px;
   padding: 0;
+
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .actions-item {
   width: 560px;
+  border-radius: 15px;
 }
 
 .actions-item h3 {
@@ -293,6 +339,9 @@ a {
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
+
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .catalog-item {
@@ -331,6 +380,10 @@ a {
 }
 
 .rubl {
+  display: inline-block;
+  width: 26px;
+  height: 31px;
+
   font-size: 0;
 
   background-image: url("../img/ruble.svg");
@@ -353,10 +406,15 @@ a {
   height: 306px;
   margin-bottom: 40px;
 
+  border-radius: 15px;
+
   color: #323232;
   background-image: url("../img/waffle-pattern.jpg");
   background-position: 0 0;
   background-color: #e9dcbf;
+
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .features h3 {
@@ -367,17 +425,23 @@ a {
 }
 
 .wrapper-middle {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   display: flex;
   justify-content: space-between;
+
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .blog {
   width: 560px;
 
   background-image: url("../img/strawberry-bg.jpg");
+  background-position: 100% 0;
   background-repeat: no-repeat;
   background-color: #ffffff;
+
+  border-radius: 15px;
 }
 
 .blog h2 {
@@ -406,12 +470,15 @@ a {
 
   font-weight: 700;
   color: #5a5a5a;
+  border-radius: 15px;
 
   background-color: #f8f7f4;
+  background-image: url("../img/bg-post.svg");
 }
 
 .contacts {
-  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
   min-height: 430px;
 
   font-size: 14px;
@@ -421,6 +488,9 @@ a {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-color: #ede6cd;
+
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .adress {
@@ -438,17 +508,16 @@ a {
   color: #323232;
 }
 
-.main-footer {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .wrapper-footer {
-  margin-top: 30px;
+  margin-top: 18px;
+  margin-bottom: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .footer-menu {
@@ -537,6 +606,8 @@ a {
 }
 
 .modal-feedback {
+  display: none;
+  position: absolute;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -553,6 +624,7 @@ a {
 }
 
 .modal-card {
+  display: none;
   position: absolute;
   width: 540px;
 
@@ -560,6 +632,8 @@ a {
   font-size: 13px;
   line-height: 16px;
   color: #323232;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
   background-color: #f8f7f4;
 }
@@ -585,7 +659,9 @@ a {
   color: #ffffff;
 }
 
-.breadcrumbs {
+.breadcrumbs > li {
+  display: inline-block;
+  position: relative;
 }
 
 .breadcrumbs a {
@@ -611,13 +687,16 @@ a {
 }
 
 .filters {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   width: 863px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+
+  background-color: blue;
+  outline: 2px solid red;
 }
 
 .filter-form {
@@ -700,6 +779,13 @@ a {
 .pagination-list {
   text-align: right;
   list-style: none;
+
+  background-color: blue;
+  outline: 2px solid red;
+}
+
+.pagination-list > li {
+  display: inline-block;
 }
 
 .pagination-list a {
@@ -710,7 +796,8 @@ a {
 }
 
 .pagination-item {
-  display: inline-block;
+  width: 27px;
+  height: 26px;
 }
 
 .pagination-item a:hover {
