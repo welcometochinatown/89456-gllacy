@@ -38,10 +38,6 @@ a {
 
 .header-wrapper {
   display: flex;
-  flex-wrap: wrap;
-
-  background-color: blue;
-  outline: 2px solid red;
 }
 
 .main-navigation {
@@ -55,7 +51,6 @@ a {
 }
 
 .site-navigation {
-  width: 406px;
   margin-right: 319px;
 
   list-style: none;
@@ -63,23 +58,12 @@ a {
 
 .site-navigation > li {
   display: inline-block;
+  vertical-align: top;
   position: relative;
 }
 
 .user-navigation a {
   color: #ffffff;
-}
-
-.search {
-
-}
-
-.login {
-
-}
-
-.empty {
-
 }
 
 .site-navigation a {
@@ -95,7 +79,6 @@ a {
 }
 
 .site-navigation a:hover {
-  display: block;
   color: #323232;
   text-decoration: none;
 
@@ -123,7 +106,6 @@ a {
   position: absolute;
   display: none;
   width: 143px;
-  height: 171px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -155,7 +137,7 @@ a {
 }
 
 .user-navigation {
-  width: 267px;
+  min-width: 267px;
 
   font-weight: 500;
   font-size: 14px;
@@ -168,6 +150,7 @@ a {
 .user-navigation > li {
   display: inline-block;
   position: relative;
+  vertical-align: top;
 }
 
 .user-navigation .search-form,
@@ -242,6 +225,7 @@ a {
 
 .header-contacts {
   margin-left: auto;
+  text-align: right;
 }
 
 .header-contacts p {
@@ -293,9 +277,6 @@ a {
   justify-content: space-between;
   margin-bottom: 40px;
   padding: 0;
-
-  background-color: blue;
-  outline: 2px solid red;
 }
 
 .actions-item {
@@ -348,9 +329,6 @@ a {
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
-
-  background-color: blue;
-  outline: 2px solid red;
 }
 
 .catalog-item {
@@ -390,6 +368,7 @@ a {
 
 .rubl {
   display: inline-block;
+  vertical-align: middle;
   width: 26px;
   height: 31px;
 
@@ -411,8 +390,8 @@ a {
   width: 560px;
 }
 
-.features {
-  height: 306px;
+.features-wrapper {
+  min-height: 306px;
   margin-bottom: 40px;
 
   border-radius: 15px;
@@ -421,9 +400,6 @@ a {
   background-image: url("../img/waffle-pattern.jpg");
   background-position: 0 0;
   background-color: #e9dcbf;
-
-  background-color: blue;
-  outline: 2px solid red;
 }
 
 .features h3 {
@@ -437,9 +413,6 @@ a {
   margin-bottom: 39px;
   display: flex;
   justify-content: space-between;
-
-  background-color: blue;
-  outline: 2px solid red;
 }
 
 .blog {
@@ -486,7 +459,6 @@ a {
 }
 
 .contacts {
-  width: 1200px;
   margin: 0 auto;
   min-height: 430px;
 
@@ -495,6 +467,7 @@ a {
   color: #323232;
 
   background-image: url("../img/map.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #ede6cd;
 
@@ -517,20 +490,14 @@ a {
   color: #323232;
 }
 
-.wrapper-footer {
+.main-footer {
   margin-top: 18px;
-  margin-bottom: 0;
-  padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background-color: blue;
-  outline: 2px solid red;
+  justify-content: flex-start;
 }
 
 .footer-menu {
-  width: 560px;
+  width: 355px;
 
   font-weight: 700;
   font-size: 13px;
@@ -538,12 +505,14 @@ a {
   color: #ffffff;
 }
 
+
 .footer-social ul {
   list-style: none;
 }
 
 .footer-social {
-  width: 267px;
+  width: 185px;
+  margin-right: 180px;
 
   font-size: 0;
 }
@@ -601,7 +570,8 @@ a {
 
 
 .footer-copyright {
-  width: 267px;
+  width: 189px;
+  margin-left: auto;
 
   font-weight: 400;
   font-size: 12px;
@@ -634,10 +604,9 @@ a {
 
 .modal-card {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 540px;
 
-  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -670,6 +639,7 @@ a {
 
 .breadcrumbs > li {
   display: inline-block;
+  vertical-align: top;
   position: relative;
 }
 
@@ -697,7 +667,6 @@ a {
 
 .filters {
   margin-bottom: 40px;
-  width: 863px;
 
   font-weight: 500;
   font-size: 16px;
@@ -711,7 +680,6 @@ a {
 .filter-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .filters legend {
@@ -788,13 +756,11 @@ a {
 .pagination-list {
   text-align: right;
   list-style: none;
-
-  background-color: blue;
-  outline: 2px solid red;
 }
 
 .pagination-list > li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .pagination-list a {
@@ -804,9 +770,14 @@ a {
   color: #ffffff;
 }
 
-.pagination-item {
-  width: 27px;
+.pagination-list .prev {
+  padding: 0;
+  width: 26px;
   height: 26px;
+}
+
+.pagination-item a {
+  padding: 2px 4px;
 }
 
 .pagination-item a:hover {
