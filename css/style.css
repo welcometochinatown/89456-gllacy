@@ -47,6 +47,8 @@ a {
 }
 
 .breadcrumbs {
+  display: inline-block;
+  vertical-align: top;
   list-style: none;
 }
 
