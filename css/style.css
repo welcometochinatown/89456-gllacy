@@ -23,6 +23,29 @@ a {
   text-decoration: none;
 }
 
+.site-wrapper {
+  min-width: 940px;
+  background-image: url("../img/icecream-main-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/icecream-main-2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/icecream-main-3.png");
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,8 +69,11 @@ a {
 }
 
 .breadcrumbs {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -287,26 +313,81 @@ a {
   position: relative;
 }
 
-.promo-slider h3 {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 60.35px;
+.promo-slider {
+  position: relative;
+  padding-top: 321px;
+  text-align: center;
   color: #ffffff;
 }
 
-.first-slide {
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 25px;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slide {
+  display: none;
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
   background-image: url("../img/icecream-main-1.png");
-  background-repeat: no-repeat;
 }
 
-.second-slide {
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
   background-image: url("../img/icecream-main-2.png");
-  background-repeat: no-repeat;
 }
 
-.third-slide {
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
   background-image: url("../img/icecream-main-3.png");
-  background-repeat: no-repeat;
 }
 
 .actions-list {
@@ -704,10 +785,9 @@ a {
   fill: rgb(255,255,255);
 }
 
+
 .footer-menu ul {
   padding: 0 0;
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -804,9 +884,26 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  display: inline-block;
-  vertical-align: top;
   position: relative;
+  margin-right: 22px;
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  color: #ffffff;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs-current::after {
+  display: none;
 }
 
 .breadcrumbs a {
@@ -863,6 +960,9 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
   color: #ffffff;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
@@ -871,6 +971,7 @@ a {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
 }
+
 
 .button:focus,
 .button:hover {
@@ -884,6 +985,8 @@ a {
 }
 
 .slider-button {
+  display: inline-block;
+  padding: 12px 44px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -915,12 +1018,22 @@ a {
   list-style: none;
 }
 
+.pagination-item {
+  margin-right: 5px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
 .pagination-list > li {
+  width: 26px;
+  height: 26px;
   display: inline-block;
   vertical-align: top;
 }
 
-.pagination-list a {
+.pagination-item a {
   display: inline-block;
   font-weight: 500;
   font-size: 16px;
@@ -928,10 +1041,28 @@ a {
   color: #ffffff;
 }
 
-.pagination-list .prev {
+.pagination-list .pagination-current {
+  border-radius: 50%;
+}
+
+.pagination-item .prev,
+.pagination-item .next {
   padding: 0;
   width: 26px;
   height: 26px;
+}
+
+.prev {
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: rotate(180deg);
+}
+
+.next {
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .pagination-item a {

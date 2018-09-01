@@ -11,6 +11,12 @@
 
 <body>
 
+<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+<div class="site-wrapper">
+
+
   <header class="main-header container">
 
     <div class="header-wrapper">
@@ -79,22 +85,24 @@
 
     <section class="promo-slider container">
       <h2 class="visually-hidden">Промо слайдер</h2>
-      <div class="first-slide">
-        <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-        <a class="button slider-button" href="#">Давайте оба!</a>
-      </div>
-      <div class="second-slide">
-        <h3>Шоколадный пломбир и лимонный сорбет</h3>
-        <a class="button slider-button" href="#">Давайте оба!</a>
-      </div>
-      <div class="third-slide">
-        <h3>Пломбир с помадкой и клубничный щербет</h3>
-        <a class="button slider-button" href="#">Давайте оба!</a>
-      </div>
       <div class="slider-controls">
-        <button class="slider-control">Первый</button>
-        <button class="slider-control">Второй</button>
-        <button class="slider-control">Третий</button>
+        <label for="product-1">Первый</label>
+        <label for="product-2">Второй</label>
+        <label for="product-3">Третий</label>
+      </div>
+      <div class="slider-list">
+        <div class="first-slide slide"  id="slide1">
+          <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+          <a class="button slider-button" href="#">Давайте оба!</a>
+        </div>
+        <div class="second-slide slide"  id="slide2">
+          <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+          <a class="button slider-button" href="#">Давайте оба!</a>
+        </div>
+        <div class="third-slide slide"  id="slide3">
+          <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+          <a class="button slider-button" href="#">Давайте оба!</a>
+        </div>
       </div>
     </section>
 
@@ -238,7 +246,7 @@
       <button class="button submit-button" type="submit">Отправить</button>
     </form>
   </section>
-
+</div>
 </body>
 
 </html>
