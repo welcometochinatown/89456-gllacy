@@ -182,19 +182,25 @@ a {
 .user-navigation .navigation-buttons {
   display: block;
   margin: 0;
-  padding: 7px 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 40px;
+  padding-right: 15px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.user-navigation > li {
+.user-navigation .search-button {
+  padding-left: 17px;
+}
 
+.user-navigation > li {
 }
 
 .user-navigation .login,
 .user-navigation .empty,
 .user-navigation .two-items-card {
-  padding-left: 25px;
+  padding-left: 15px;
   position: relative;
 }
 
@@ -202,7 +208,7 @@ a {
   content: "";
   position: absolute;
   top: 5px;
-  left: 15px;
+  left: 20px;
   width: 21px;
   height: 19px;
   background-image: url("../img/basket.svg");
@@ -214,7 +220,7 @@ a {
   content: "";
   position: absolute;
   top: 5px;
-  left: 15px;
+  left: 20px;
   width: 21px;
   height: 19px;
   background-image: url("../img/basket-red.svg");
