@@ -84,9 +84,9 @@ a {
 }
 
 .site-navigation > li {
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  position: relative;
 }
 
 .user-navigation a {
@@ -165,6 +165,9 @@ a {
 }
 
 .user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
   min-width: 267px;
   font-weight: 500;
@@ -176,31 +179,30 @@ a {
   margin-left: auto;
 }
 
-.user-navigation a {
-  margin-top: 12px;
+.user-navigation .navigation-buttons {
+  display: block;
+  margin: 0;
   padding: 7px 15px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .user-navigation > li {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
+
 }
 
 .user-navigation .login,
 .user-navigation .empty,
 .user-navigation .two-items-card {
-  padding-left: 20px;
+  padding-left: 25px;
   position: relative;
 }
 
 .empty::before {
   content: "";
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 5px;
+  left: 15px;
   width: 21px;
   height: 19px;
   background-image: url("../img/basket.svg");
@@ -211,8 +213,8 @@ a {
 .two-items-card::before {
   content: "";
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 5px;
+  left: 15px;
   width: 21px;
   height: 19px;
   background-image: url("../img/basket-red.svg");
@@ -239,14 +241,23 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #323232;
   background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .email-form .form-input,
 .feedback-form .form-input {
   font-size: 16px;
   line-height: 24px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -303,6 +314,9 @@ a {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  margin: 0;
+  margin-top: -3px;
+  margin-bottom: 5px;
 }
 
 .header-contacts a {
@@ -413,8 +427,8 @@ a {
 
 .actions-item h3 {
   display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 10px;
   text-align: left;
   font-weight: 700;
   font-size: 35px;
@@ -659,7 +673,7 @@ a {
 .distribution {
   padding: 5px;
   width: 560px;
-  font-weight: 700;
+  font-weight: 500;
   color: #5a5a5a;
   border-radius: 15px;
   background-color: #f8f7f4;
@@ -703,26 +717,33 @@ a {
 
 .adress {
   position: absolute;
-  top: 60;
+  top: 65px;
   right: 25px;
-  padding: 25px 20px;
+  padding: 20px 20px;
   width: 300px;
   border-radius: 15px;
   background-color: #ffffff;
 }
 
-.contacts p {
-  padding: 0px;
+.adress p {
+  display: block;
+  padding-right: 50px;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
-.contacts b,
-.contacts .tel {
-  margin: 10px 0;
-  padding: 0;
+.adress b,
+.adress .tel {
+  display: block;
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #323232;
+}
+
+.adress b {
+  margin-bottom: 15px;
 }
 
 .adress .contacts-button {
@@ -849,6 +870,7 @@ a {
   width: 478px;
   padding: 24px 20px;
   margin-left: -230px;
+  border-radius: 10px;
 }
 
 .modal-close {
@@ -912,15 +934,13 @@ a {
   line-height: 16px;
   position: relative;
   margin-right: 22px;
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .breadcrumbs li::after {
-  content: "";
+  content: "»";
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -10px;
   color: #ffffff;
 }
 
@@ -962,6 +982,12 @@ a {
 .filter-form {
   display: flex;
   flex-wrap: wrap;
+}
+
+.filter-form fieldset {
+  margin: 0;
+  padding: 5px 17px 17px 0;
+  border: none;
 }
 
 .filters legend {
@@ -1023,8 +1049,12 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  margin-top: 21px;
+  padding: 7px 26px;
+  border-radius: 19px;
   border: 2px solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 
 .catalog-submit-button:focus,
