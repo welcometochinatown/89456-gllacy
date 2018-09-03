@@ -24,7 +24,7 @@ a {
 }
 
 .site-wrapper {
-  min-width: 940px;
+  min-width: 1200px;
   background-image: url("../img/icecream-main-1.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -79,7 +79,7 @@ a {
 
 .site-navigation {
   padding: 0;
-  width: 400px;
+  margin-right: auto;
   list-style: none;
 }
 
@@ -91,9 +91,6 @@ a {
 
 .user-navigation a {
   color: #ffffff;
-
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .site-navigation .main-buttons {
@@ -182,16 +179,27 @@ a {
 .user-navigation .navigation-buttons {
   display: block;
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 40px;
-  padding-right: 15px;
+  padding: 7px 15px 7px 40px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .user-navigation .search-button {
   padding-left: 17px;
+}
+
+.search-button {
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #ffffff;
+  background-image: url("../img/loupe-black.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .user-navigation > li {
@@ -202,6 +210,25 @@ a {
 .user-navigation .two-items-card {
   padding-left: 15px;
   position: relative;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 21px;
+  height: 19px;
+  background-image: url("../img/entrance.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login:hover::before,
+.login:focus::before {
+  background-image: url("../img/entrance-black.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .empty::before {
@@ -247,10 +274,7 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  padding-top: 10px;
-  padding-bottom: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px 15px 7px;
   color: #323232;
   background-color: #ffffff;
   border-radius: 5px;
@@ -260,10 +284,7 @@ a {
 .feedback-form .form-input {
   font-size: 16px;
   line-height: 24px;
-  padding-top: 14px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 14px 15px 10px;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -365,6 +386,7 @@ a {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
@@ -425,14 +447,15 @@ a {
 }
 
 .actions-item {
-  position: relative;
   width: 560px;
-  padding: 15px 20px 93px;
+  padding: 15px 20px 35px;
+  text-align: right;
   border-radius: 15px;
 }
 
 .actions-item h3 {
   display: block;
+  text-align: left;
   margin: 0;
   margin-bottom: 10px;
   text-align: left;
@@ -443,16 +466,12 @@ a {
 }
 
 .actions-item p {
+  text-align: left;
+  padding-bottom: 34px;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
-}
-
-.action-button {
-  position: absolute;
-  right: 20px;
-  bottom: 25px;
 }
 
 .actions-list {
@@ -485,7 +504,8 @@ a {
   position: relative;
 }
 
-.catalog-list p {
+.hits-item-price,
+.catalog-item-price {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -498,12 +518,7 @@ a {
 }
 
 .catalog-list h3 {
-  margin-top: 10;
-}
-
-.catalog-list a {
-  margin-bottom: 15px;
-  color: #ffffff;
+  margin-top: 10px;
 }
 
 .catalog-list .weigth {
@@ -533,6 +548,7 @@ a {
 }
 
 .catalog-name {
+  margin-bottom: 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -566,7 +582,7 @@ a {
   padding-left: 80px;
 }
 
-.features-first-item::before {
+.features-list::before {
   content: "";
 
   position: absolute;
@@ -574,48 +590,30 @@ a {
   left: 25px;
   width: 49px;
   height: 49px;
+}
+
+.features-icecream {
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.features-second-item::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 25px;
-  width: 49px;
-  height: 49px;
+.features-cow {
   background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.features-third-item::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 25px;
-  width: 49px;
-  height: 49px;
+.features-eco {
   background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.features-fourth-item::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 25px;
-  width: 49px;
-  height: 49px;
-  background-image: url("../img/thermometer.svg");
+.features-thermometer {
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-image: url("../img/thermometer.svg");
 }
 
 .features-wrapper {
@@ -640,11 +638,13 @@ a {
 .wrapper-middle {
   margin-bottom: 39px;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .blog {
   width: 560px;
+  min-height: 220px;
   padding: 15px 20px;
   background-image: url("../img/strawberry-bg.jpg");
   background-position: left;
@@ -754,6 +754,7 @@ a {
 
 .adress .contacts-button {
   display: inline-block;
+  vertical-align: top;
   margin: 20px 0;
   padding-left: 30px;
   padding-right: 30px;
@@ -782,9 +783,6 @@ a {
 }
 
 .social-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 38px;
   height: 38px;
   margin-right: 11px;
@@ -793,22 +791,28 @@ a {
   opacity: 0.8;
 }
 
-.social-button:hover,
-.social-button:focus {
-  border: 3px solid rgba(255,255,255, 0.5);
+.social-twitter {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.social-button:hover path,
-.social-button:focus path {
-  fill: rgb(255,255,255);
+.social-Instagram {
+  background-image: url("../img/instagram.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.social-button:active {
-  border: 3px solid rgba(255,255,255, 0.7);
+.social-facebook {
+  background-image: url("../img/fb.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.social-button:active path {
-  fill: rgb(255,255,255);
+.social-vk {
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer-menu {
@@ -869,6 +873,7 @@ a {
 
 .modal-feedback {
   position: fixed;
+  display: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -880,6 +885,35 @@ a {
   padding: 24px 20px;
   margin-left: -230px;
   border-radius: 10px;
+  z-index: 2;
+}
+
+.modal-overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+@keyframes bounce {
+ 0% { transform: translateY(-2000px); }
+ 70% { transform: translateY(30px); }
+ 90% { transform: translateY(-10px); }
+ 100% { transform: translateY(0); }
+}
+
+.modal-show-bounce {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-close {
@@ -1047,6 +1081,7 @@ a {
 
 .slider-button {
   display: inline-block;
+  vertical-align: top;
   padding: 12px 44px;
   font-weight: 700;
   font-size: 32px;
@@ -1100,6 +1135,7 @@ a {
 
 .pagination-item a {
   display: inline-block;
+  vertical-align: top;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
