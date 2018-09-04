@@ -547,6 +547,10 @@ a {
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
+.catalog-item h3 {
+  text-align: center;
+}
+
 .catalog-name {
   margin-bottom: 15px;
   font-weight: 500;
@@ -559,7 +563,7 @@ a {
 .rubl {
   display: inline-block;
   vertical-align: middle;
-  width: 26px;
+  width: 28px;
   height: 31px;
   font-size: 0;
   background-image: url("../img/ruble.svg");
