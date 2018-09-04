@@ -24,3 +24,18 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+ymaps.ready(init);
+function init(){
+  var myMap = new ymaps.Map("map", {
+  center: [59.9, 30.3],
+  zoom: 14
+  });
+}
+
+var myPlacemark = new ymaps.Placemark([59.9, 30.3], {
+  hintContent: 'Содержимое всплывающей подсказки',
+  balloonContent: 'Содержимое балуна'
+});
+
+myMap.geoObjects.add(myPlacemark);

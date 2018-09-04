@@ -231,6 +231,11 @@ a {
   background-position: 0 0;
 }
 
+.login:hover .navigation-buttons {
+  color: #323232;
+  background-color: #ffffff;
+}
+
 .empty::before {
   content: "";
   position: absolute;
@@ -284,7 +289,7 @@ a {
 .feedback-form .form-input {
   font-size: 16px;
   line-height: 24px;
-  padding: 14px 15px 10px;
+  padding: 10px 15px 10px;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -494,13 +499,14 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 40px;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .catalog-item {
   width: 267px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -509,16 +515,18 @@ a {
   position: absolute;
   margin: 0;
   padding: 0;
-  bottom: 120px;
+  bottom: 60px;
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
   color: #ffffff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  z-index: 2;
 }
 
 .catalog-list h3 {
   margin-top: 10px;
+  z-index: 2;
 }
 
 .catalog-list .weigth {
@@ -535,6 +543,7 @@ a {
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: 2;
 }
 
 .catalog-item img {
@@ -548,6 +557,8 @@ a {
 }
 
 .catalog-item h3 {
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -568,6 +579,33 @@ a {
   font-size: 0;
   background-image: url("../img/ruble.svg");
   background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.item-hover {
+  background-color: rgba(247, 248, 244, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  display: none;
+  min-height: 100%;
+  left: -15px;
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  width: 295px;
+  bottom: -80px;
+}
+
+.catalog-item:hover .item-hover {
+  display: block;
+}
+
+.catalog-item .catalog-button {
+  position: absolute;
+  padding: 10px 18px;
+  bottom: 30px;
+  left: 46px;
+  z-index: 2;
 }
 
 .features ul {
@@ -703,15 +741,25 @@ a {
 }
 
 .email-form {
-  margin-top: 20px;
+  margin-top: 35px;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
+.email-form p {
+  display: block;
+  margin: 0;
+}
+
 .distribution-form-input {
   width: 368px;
   margin-right: 11px;
+}
+
+.distribution .distribution-submit-button {
+  padding: 10px 19px;
 }
 
 .contacts {
@@ -734,6 +782,7 @@ a {
   width: 300px;
   border-radius: 15px;
   background-color: #ffffff;
+  z-index: 2;
 }
 
 .adress p {
@@ -988,7 +1037,7 @@ a {
 }
 
 .breadcrumbs li::after {
-  content: "Â»";
+  content: "»";
   position: absolute;
   top: 0;
   right: -10px;

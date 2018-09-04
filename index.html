@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -124,28 +125,36 @@
         <h2 class="visually-hidden">Хиты</h2>
         <ul class="catalog-list catalog-list-hits">
           <li class="catalog-item catalog-item-hit">
-            <img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+            <img class="catalog-image" src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
             <p class="hits-item-price">310<span class="rubl">Рубль</span><span class="weigth">/кг</span></p>
             <h3><a class="catalog-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-            <a class="button catalog-button" href="#">Быстрый просмотр</a>
+            <div class="item-hover">
+              <a class="button catalog-button" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <img src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+            <img class="catalog-image" src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
             <p class="hits-item-price">380<span class="rubl">Рубль</span><span class="weigth">/кг</span></p>
             <h3><a class="catalog-name" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-            <a class="button catalog-button" href="#">Быстрый просмотр</a>
+            <div class="item-hover">
+              <a class="button catalog-button" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <img src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+            <img class="catalog-image" src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
             <p class="hits-item-price">355<span class="rubl">Рубль</span> <span class="weigth">/кг</span></p>
             <h3><a class="catalog-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-            <a class="button catalog-button" href="#">Быстрый просмотр</a>
+            <div class="item-hover">
+              <a class="button catalog-button" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="catalog-item catalog-item-hit">
-            <img src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+            <img class="catalog-image" src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
             <p class="hits-item-price">415<span class="rubl">Рубль</span> <span class="weigth">/кг</span></p>
             <h3><a class="catalog-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-            <a class="button catalog-button" href="#">Быстрый просмотр</a>
+            <div class="item-hover">
+              <a class="button catalog-button" href="#">Быстрый просмотр</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -185,6 +194,7 @@
       </div>
 
       <section class="contacts">
+        <div id="map" style="min-width: 1200px; min-height: 430px; z-index: 1; position: relative;"></div>
         <h2 class="visually-hidden">Карты и контакты</h2>
         <div class="container">
           <div class="adress">
