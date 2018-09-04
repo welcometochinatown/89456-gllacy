@@ -1,21 +1,21 @@
-const contactsButton = document.querySelector(".contacts-button");
-const modalFeedback = document.querySelector(".modal-feedback");
-const modalClose = document.querySelector(".modal-close");
-const modalOverlay = document.querySelector(".modal-overlay")
+var contactsButton = document.querySelector(".contacts-button");
+var modalFeedback = document.querySelector(".modal-feedback");
+var modalClose = document.querySelector(".modal-close");
+var modalOverlay = document.querySelector(".modal-overlay");
 
-contactsButton.addEventListener("click", (evt) => {
+contactsButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalFeedback.classList.add("modal-show-bounce");
   modalOverlay.classList.add("modal-show");
 });
 
-modalClose.addEventListener("click", (evt) => {
+modalClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalFeedback.classList.remove("modal-show-bounce");
   modalOverlay.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", (evt) => {
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (modalFeedback.classList.contains("modal-show-bounce") && modalOverlay.classList.contains("modal-show")) {
       evt.preventDefault();

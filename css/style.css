@@ -650,6 +650,7 @@ a {
   width: 560px;
   min-height: 220px;
   padding: 15px 20px;
+  padding-right: 210px;
   background-image: url("../img/strawberry-bg.jpg");
   background-position: left;
   background-repeat: no-repeat;
@@ -820,7 +821,8 @@ a {
 }
 
 .footer-menu {
-  width: 500px;
+  width: 400px;
+
   font-weight: 700;
   font-size: 13px;
   line-height: 18px;
@@ -828,12 +830,14 @@ a {
 }
 
 .footer-menu ul {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 0;
   list-style: none;
 }
 
 .footer-menu li {
-  width: 120px;
+  margin-right: 10px;
 }
 
 .footer-menu a {
