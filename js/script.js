@@ -70,6 +70,7 @@ form.addEventListener("submit", function (evt) {
 
 
 ymaps.ready(init);
+
 function init(){
   var myMap = new ymaps.Map("map", {
   center: [59.9, 30.3],
