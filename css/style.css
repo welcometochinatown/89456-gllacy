@@ -46,7 +46,9 @@ a {
   background-image: url("../img/icecream-main-3.png");
 }
 
-.visually-hidden {
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -133,14 +135,25 @@ a {
 .inner-site-navigation {
   position: absolute;
   display: none;
+  top: 30px;
+  left: 0;
+  padding: 0;
+  text-align: left;
   width: 143px;
+  min-height: 171px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   list-style: none;
+  z-index: 2;
 }
 
+
 .inner-site-navigation a {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 10px 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -148,9 +161,28 @@ a {
   text-decoration: none;
 }
 
+.inner-site-navigation .noveltys {
+  padding: 13px 15px;
+}
+
+.inner-last-item:hover,
+.inner-last-item:active,
+.inner-last-item:focus {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:  5px;
+}
+
+.noveltys:hover,
+.noveltys:active,
+.noveltys:focus {
+  border-top-right-radius: 5px;
+  border-top-left-radius:  5px;
+}
+
 .inner-site-navigation .active-link {
   color: #ffffff;
   background-color: #d07058;
+  cursor: pointer;
 }
 
 .inner-site-navigation a:hover {
@@ -185,13 +217,16 @@ a {
 }
 
 .user-navigation .search-button {
-  padding-left: 17px;
+  padding: 0;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
 }
 
 .search-button {
   background-image: url("../img/loupe.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 7px 5px;
 }
 
 .search-button:hover,
@@ -199,7 +234,7 @@ a {
   background-color: #ffffff;
   background-image: url("../img/loupe-black.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 7px 5px;
 }
 
 .user-navigation > li {
@@ -210,6 +245,10 @@ a {
 .user-navigation .two-items-card {
   padding-left: 15px;
   position: relative;
+}
+
+.user-navigation .login {
+  padding-left: 0;
 }
 
 .login::before {
@@ -264,6 +303,7 @@ a {
 .user-navigation .login-form {
   display: none;
   position: absolute;
+  padding: 10px 15px;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
@@ -280,6 +320,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   padding: 10px 15px 7px;
+  margin: 0;
   color: #323232;
   background-color: #ffffff;
   border-radius: 5px;
@@ -742,7 +783,7 @@ a {
 
 .email-form {
   margin-top: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -815,6 +856,7 @@ a {
 
 .main-footer {
   margin-top: 18px;
+  padding-bottom: 13px;
   display: flex;
   justify-content: flex-start;
 }
@@ -822,26 +864,54 @@ a {
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   list-style: none;
   margin: 0 auto;
+  margin-top: 10px;
   padding: 0;
 }
 
 .footer-social {
-  display: flex;
-  justify-content: flex-start;
   width: 250px;
   margin-right: 80px;
+  border-radius: 50%;
+
 }
 
 .social-button {
+  display: inline-block;
   width: 38px;
   height: 38px;
-  margin-right: 11px;
-  border: 3px solid rgba(255,255,255, 0.6);
+  margin-right: 10px;
+  border: 3px solid rgba(255,255,255, 0.8);
   border-radius: 50%;
-  opacity: 0.8;
+  opacity: 0.5;
+}
+
+.social-button:hover,
+.social-button:focus {
+  opacity: 1;
+  border: 3px solid rgba(255,255,255, 0.7);
+}
+
+.social-twitter:active {
+  background-image: url("../img/twitter-gr.svg");
+  border: 3px solid rgba(255,255,255, 0.7);
+}
+
+.social-Instagram:active {
+  background-image: url("../img/instagram-gr.svg");
+  border: 3px solid rgba(255,255,255, 0.7);
+}
+
+.social-facebook:active {
+  background-image: url("../img/fb-gr.svg");
+  border: 3px solid rgba(255,255,255, 0.7);
+}
+
+.social-vk:active {
+  background-image: url("../img/vk-gr.svg");
+  border: 3px solid rgba(255,255,255, 0.7);
 }
 
 .social-twitter {
@@ -868,8 +938,9 @@ a {
   background-position: 0 0;
 }
 
+
 .footer-menu {
-  width: 400px;
+  width: 380px;
 
   font-weight: 700;
   font-size: 13px;
@@ -880,12 +951,39 @@ a {
 .footer-menu ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 0;
   list-style: none;
 }
 
 .footer-menu li {
-  margin-right: 10px;
+  width: 185px;
+}
+
+.footer-menu-item {
+  margin-left: 52px;
+  position: relative;
+}
+
+.footer-menu-info {
+  margin-left: 65px;
+}
+
+.footer-menu-item::before {
+  content: "";
+
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  top: 0;
+  left: -20px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-menu-item:hover::before {
+  background-image: url("../img/heart-pink.svg");
 }
 
 .footer-menu a {
@@ -1113,11 +1211,75 @@ a {
   margin: 0;
   padding: 5px 17px 17px 0;
   border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
 }
 
 .filters legend {
   font-size: 14px;
   line-height: 16px;
+}
+
+.filter-option {
+  margin-bottom: 10px;
+  padding-left: 35px;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -30px;
+  top: 0;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -30px;
+  top: 0;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -30px;
+  top: 0;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -30px;
+  top: 0;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 .filter-sort-form {
@@ -1179,7 +1341,7 @@ a {
   padding: 7px 26px;
   border-radius: 19px;
   border: 2px solid rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
