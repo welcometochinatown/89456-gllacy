@@ -66,7 +66,7 @@
             <table>
               <tr>
                 <td>
-                  <button class="modal-close">Удалить</button>
+                  <button class="modal-card-close">Удалить</button>
                 </td>
                 <td>
                   <p>Пломбир с апельсиновым джемом</p>
@@ -80,7 +80,7 @@
               </tr>
               <tr>
                 <td>
-                  <button class="modal-close">Удалить</button>
+                  <button class="modal-card-close">Удалить</button>
                 </td>
                 <td>
                   <p>Клубничный пломбир с присыпкой из белого шоколада</p>
@@ -122,25 +122,34 @@
       <form class="filter-form" method="post" action="http://echo.htmlacademy.ru">
         <fieldset>
           <legend>Сортировка:</legend>
-          <label>
-            <select class="filter-sort-form" name="sort">
-              <option value="popularity">по популярности</option>
-              <option value="cheap first">сначала недорогие</option>
-              <option value="costly first">сначала дорогие</option>
-              <option value="richness">по жирности</option>
-            </select>
-          </label>
+          <div class="form-wrapper-border">
+            <label>
+              <select class="filter-sort-form" name="sort">
+                <option value="popularity">по популярности</option>
+                <option value="cheap first">сначала недорогие</option>
+                <option value="costly first">сначала дорогие</option>
+                <option value="richness">по жирности</option>
+              </select>
+            </label>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Цена: 100 руб. - 500 руб.</legend>
-          <div>
+          <div class="form-wrapper-border">
             <label for="range" class="visually-hidden">Сортировка по цене</label>
-            <input type="range" id="range" min="100" max="500" value="200" name="range">
+            <input class="visually-hidden" type="range" id="range" min="100" max="500" value="200" name="range">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
           </div>
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
-          <div class="form-wrapper">
+          <div class="form-wrapper form-wrapper-border">
             <div class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="radio-group" id="filter-zero" value="zero">
               <label for="filter-zero">0%</label>
@@ -161,7 +170,7 @@
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
-          <div class="form-wrapper">
+          <div class="form-wrapper form-wrapper-border">
             <div class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" value="chocolate" checked>
               <label for="filter-chocolate">шоколадные</label>

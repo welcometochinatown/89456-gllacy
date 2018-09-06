@@ -255,7 +255,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 5px;
-  left: 20px;
+  left: 10px;
   width: 21px;
   height: 19px;
   background-image: url("../img/entrance.svg");
@@ -299,14 +299,56 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.user-navigation .search-form,
+.login-form a {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.login-form .submit-button {
+
+}
+
+.login-form .form-input {
+  margin-bottom: 20px;
+}
+
 .user-navigation .login-form {
+  z-index: 2;
+  width: 277px;
+  top: 35px;
+  left: -187px;
   display: none;
+  position: absolute;
+  padding: 20px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+}
+
+.search {
+  position: relative;
+}
+
+.user-navigation .search-form {
+  display: none;
+  top: 35px;
+  left: -311px;
+  width: 341px;
   position: absolute;
   padding: 10px 15px;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
+}
+
+.search-form p,
+.login-form p {
+  margin: 0;
 }
 
 .search:hover .search-form,
@@ -316,6 +358,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-input {
+  width: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -353,10 +396,6 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
-.login-form a {
-  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
-}
-
 .login-form a:hover,
 .login-form a:active {
   color: #ffbc9e;
@@ -369,13 +408,6 @@ input[type="radio"].visually-hidden {
 
 .form-input:focus {
   border-color: #c7c6c5;
-}
-
-.login-form a {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  color: #323232;
 }
 
 .header-contacts {
@@ -618,7 +650,7 @@ input[type="radio"].visually-hidden {
   width: 28px;
   height: 31px;
   font-size: 0;
-  background-image: url("../img/ruble.svg");
+  background-image: url("../img/ruble-with-shadow.svg");
   background-repeat: no-repeat;
   z-index: 2;
 }
@@ -1033,7 +1065,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #999999;
   background-color: #f8f7f4;
-  top: 120px;
+  top: 338px;
   left: 50%;
   width: 478px;
   padding: 24px 20px;
@@ -1119,7 +1151,13 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-card {
-  display: none;
+  padding: 5px;
+  z-index: 2;
+  /*display: none;*/
+  top: 40px;
+  left: -410px;
+  width: 539px;
+  min-height: 242px;
   position: absolute;
   width: 540px;
   font-size: 13px;
@@ -1130,6 +1168,28 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 }
 
+.modal-card tr {
+  display: flex;
+}
+
+.modal-card td {
+  margin-right: 5px;
+}
+
+.modal-card-close {
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  background-image: url("./img/cross-small.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-card .card-button {
+  margin-bottom: 15px;
+}
+
 .price {
   font-weight: 400;
   font-size: 13px;
@@ -1138,6 +1198,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-card-total {
+  margin-top: 30px;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
@@ -1212,13 +1273,12 @@ input[type="radio"].visually-hidden {
   margin-right: 15px;
   padding: 0;
   border: none;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
 }
 
 .filters legend {
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 5px;
 }
 
 .form-wrapper {
@@ -1227,8 +1287,51 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
 }
 
+.form-wrapper-border {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
 .filter-option {
   padding-left: 35px;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 4px;
+
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 4px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 20px;
+  height: 23px;
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }
 
 .filter-input-radio + label::before {
@@ -1292,6 +1395,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  border: none;
   color: #ffffff;
   background-color: rgba(248, 247, 244, 0.2);
 }
@@ -1364,8 +1468,11 @@ input[type="radio"].visually-hidden {
 
 .pagination-list {
   margin-top: 50px;
-  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   list-style: none;
+
 }
 
 .pagination-item {
@@ -1379,47 +1486,52 @@ input[type="radio"].visually-hidden {
 .pagination-list > li {
   width: 26px;
   height: 26px;
-  display: inline-block;
-  vertical-align: top;
 }
 
 .pagination-item a {
+
   display: inline-block;
   vertical-align: top;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
 
-.pagination-list .pagination-current {
-  border-radius: 50%;
+.pagination-current a {
+  color: #323232;
+  background-color: #ffffff;
 }
 
 .pagination-item .prev,
 .pagination-item .next {
   padding: 0;
-  width: 26px;
-  height: 26px;
 }
 
 .prev {
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 10px 10px;
   transform: rotate(180deg);
 }
 
 .next {
-  background-image: url("../img/icon-right-small.svg");
+  background-image: url("../img/icon-right-small-white.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 5px 4px;
 }
 
 .pagination-item a {
   padding: 2px 4px;
 }
 
+.pagination-item a:hover {
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.2);
+}
 
 .pagination-item a:active {
   color: #323232;
