@@ -27,7 +27,7 @@
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li class="inner-menu">
-              <a class="main-buttons" href="catalog.html">Каталог</a>
+              <a class="main-catalog-button main-buttons" href="catalog.html">Каталог</a>
               <ul class="inner-site-navigation">
                 <li><a class="noveltys" href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
@@ -62,9 +62,13 @@
                 <input class="form-input" id="password-login" type="password" name="password-login" placeholder="Пароль">
                 <label class="visually-hidden" for="password-login">Пароль</label>
               </p>
-              <button class="button submit-button" type="submit">Войти</button>
-              <a class="forget" href="#">Забыли пароль?</a>
-              <a class="newreg" href="#">Новая регистрация</a>
+              <div class="login-form-wrapper">
+                <button class="button submit-button" type="submit">Войти</button>
+                <div class="ref-block">
+                  <a class="forget" href="#">Забыли пароль?</a>
+                  <a class="newreg" href="#">Новая регистрация</a>
+                </div>
+              </div>
             </form>
           </li>
           <li class="empty"><a class="navigation-buttons" href="#">Пусто</a></li>
@@ -142,7 +146,7 @@
           </li>
           <li class="catalog-item catalog-item-hit">
             <img class="catalog-image" src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-            <p class="hits-item-price">355<span class="rubl">Рубль</span> <span class="weigth">/кг</span></p>
+            <p class="hits-item-price">355<span class="rubl">Рубль</span><span class="weigth">/кг</span></p>
             <h3><a class="catalog-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
             <div class="item-hover">
               <a class="button catalog-button" href="#">Быстрый просмотр</a>
@@ -150,7 +154,7 @@
           </li>
           <li class="catalog-item catalog-item-hit">
             <img class="catalog-image" src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-            <p class="hits-item-price">415<span class="rubl">Рубль</span> <span class="weigth">/кг</span></p>
+            <p class="hits-item-price">415<span class="rubl">Рубль</span><span class="weigth">/кг</span></p>
             <h3><a class="catalog-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
             <div class="item-hover">
               <a class="button catalog-button" href="#">Быстрый просмотр</a>
@@ -193,10 +197,9 @@
         </section>
       </div>
 
-      <section class="contacts">
+      <section class="contacts" id="map">
         <h2 class="visually-hidden">Карты и контакты</h2>
         <div class="container">
-          <div id="map" style="min-width: auto; min-height: 430px; z-index: 1; position: relative;"></div>
           <div class="adress">
             <p>Адрес главного офиса и оффлайн-магазина:</p>
             <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -248,7 +251,7 @@
           <label class="visually-hidden" for="feedback-mail">Введите вашу почту</label>
         </p>
         <p>
-          <textarea class="form-input form-textarea" id="feedback-message" name="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="form-textarea" id="feedback-message" name="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
           <label class="visually-hidden" for="feedback-message">Оставьте отзыв</label>
         </p>
         <button class="button modal-submit-button" type="submit">Отправить</button>

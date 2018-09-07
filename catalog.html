@@ -20,7 +20,7 @@
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="inner-menu">
-            <a class="on-catalog main-buttons" href="#">Каталог</a>
+            <a class="main-catalog-button on-catalog main-buttons" href="#">Каталог</a>
             <ul class="inner-site-navigation">
               <li><a class="noveltys" href="#">Новинки</a></li>
               <li><a class="active-link">Сливочное</a></li>
@@ -55,9 +55,13 @@
               <input class="form-input" id="password-login" type="password" name="password-login" placeholder="Пароль">
               <label class="visually-hidden" for="password-login">Пароль</label>
             </p>
-            <button class="button submit-button" type="submit">Войти</button>
-            <a class="forget" href="#">Забыли пароль?</a>
-            <a class="newreg" href="#">Новая регистрация</a>
+            <div class="login-form-wrapper">
+              <button class="button submit-button" type="submit">Войти</button>
+              <div class="ref-block">
+                <a class="forget" href="#">Забыли пароль?</a>
+                <a class="newreg" href="#">Новая регистрация</a>
+              </div>
+            </div>
           </form>
         </li>
         <li class="two-items-card">

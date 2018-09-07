@@ -56,6 +56,8 @@ window.addEventListener("keydown", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!feedbackName.value || !feedbackMail.value || !feedbackMessage.value) {
     evt.preventDefault();
+    modalFeedback.classList.remove("modal-error");
+    modalFeedback.offsetWidth = modalFeedback.offsetWidth;
     modalFeedback.classList.add("modal-error");
   }
   else {
@@ -101,6 +103,7 @@ ymaps.ready(function () {
             iconContentLayout: MyIconContentLayout
         });
 
+    myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects
         .add(myPlacemark)
         .add(myPlacemarkWithContent);
