@@ -270,7 +270,9 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.login:hover .navigation-buttons {
+.login:hover .navigation-buttons,
+.two-items-card:hover .navigation-buttons,
+.empty:hover .navigation-buttons {
   color: #323232;
   background-color: #ffffff;
 }
@@ -1167,7 +1169,7 @@ input[type="radio"].visually-hidden {
 .modal-card {
   padding: 15px 15px 20px;
   z-index: 2;
-  /*display: none;*/
+  display: none;
   top: 40px;
   left: -410px;
   width: 539px;
@@ -1187,14 +1189,31 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid #cacac7;
 }
 
-.modal-card tr {
-  display: flex;
-}
-
 .modal-card td {
   padding-right: 5px;
   padding-bottom: 15px;
-  vertical-align: middle
+  vertical-align: middle;
+}
+
+.table-data-close {
+  width: 20px;
+}
+
+.table-data-image {
+  width: 35px;
+}
+
+.modal-card .table-data-name {
+  width: 235px;
+  padding-right: 10px;
+}
+
+.table-data-info {
+
+}
+
+.table-data-price {
+
 }
 
 .modal-card img {
