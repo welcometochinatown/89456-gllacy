@@ -1208,14 +1208,6 @@ input[type="radio"].visually-hidden {
   padding-right: 10px;
 }
 
-.table-data-info {
-
-}
-
-.table-data-price {
-
-}
-
 .modal-card img {
   width: 33px;
   height: 33px;
@@ -1436,9 +1428,7 @@ input[type="radio"].visually-hidden {
 
 .filter-option label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
   user-select: none;
 }
