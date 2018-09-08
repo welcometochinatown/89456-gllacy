@@ -1363,7 +1363,7 @@ input[type="radio"].visually-hidden {
   content: "»";
   position: absolute;
   top: 0;
-  right: -10px;
+  right: -13px;
   color: #ffffff;
 }
 
