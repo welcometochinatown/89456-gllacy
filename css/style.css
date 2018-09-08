@@ -34,7 +34,6 @@ a {
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -566,7 +565,6 @@ input[type="radio"].visually-hidden {
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -665,12 +663,14 @@ input[type="radio"].visually-hidden {
 .actions-list .actions-strawberry {
   background-image: url("../img/raspberry-bg.jpg");
   background-repeat: no-repeat;
+  background-position: -50px -100px;
   background-color: #aa0f30;
 }
 
 .actions-list .actions-chocolate {
   background-image: url("../img/chocolate-bg.jpg");
   background-repeat: no-repeat;
+  background-position: -50px -100px;
   background-color: #4f3226;
 }
 
@@ -797,15 +797,14 @@ input[type="radio"].visually-hidden {
 
 .features li {
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 540px;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 .features-list::before {
   content: "";
-
   position: absolute;
   top: 0;
   left: 25px;
@@ -869,7 +868,7 @@ input[type="radio"].visually-hidden {
   padding: 15px 20px;
   padding-right: 210px;
   background-image: url("../img/strawberry-bg.jpg");
-  background-position: left;
+  background-position: -50px -220px;
   background-repeat: no-repeat;
   background-color: #ffffff;
   border-radius: 15px;
@@ -1109,7 +1108,6 @@ input[type="radio"].visually-hidden {
 
 .footer-menu-item::before {
   content: "";
-
   position: absolute;
   width: 15px;
   height: 13px;
@@ -1222,7 +1220,6 @@ input[type="radio"].visually-hidden {
 
 .modal-show-bounce {
   display: block;
-
   animation: bounce 0.6s;
 }
 
@@ -1548,7 +1545,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   border: none;
   color: #ffffff;
-  background-color: rgba(248, 247, 244, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .filter-sort-form:focus {
