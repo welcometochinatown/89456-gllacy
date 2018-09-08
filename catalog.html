@@ -20,7 +20,7 @@
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="inner-menu">
-            <a class="main-catalog-button on-catalog main-buttons" href="#">Каталог</a>
+            <a class="main-catalog-button on-catalog" href="#">Каталог</a>
             <ul class="inner-site-navigation">
               <li><a class="noveltys" href="#">Новинки</a></li>
               <li><a class="active-link">Сливочное</a></li>
@@ -109,21 +109,23 @@
         </li>
       </ul>
     </div>
+    <div class="catalog-wrapper-row">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li class="breadcrumbs-current">Сливочное</li>
+      </ul>
 
-    <div class="header-contacts">
-      <p>С 10 до 20, ежедневно</p>
-      <a href="tel:+88124502525">8 812 450-25-25</a>
+      <div class="header-contacts">
+        <p>С 10 до 20, ежедневно</p>
+        <a href="tel:+88124502525">8 812 450-25-25</a>
+      </div>
     </div>
-
   </header>
 
   <main class="catalog container">
 
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li class="breadcrumbs-current">Сливочное</li>
-    </ul>
+
 
     <h1 class="page-title">Сливочное мороженое</h1>
 
@@ -149,9 +151,6 @@
             <label for="range" class="visually-hidden">Сортировка по цене</label>
             <input class="visually-hidden" type="range" id="range" min="100" max="500" value="200" name="range">
             <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
               <div class="range-toggle range-toggle-min"></div>
               <div class="range-toggle range-toggle-max"></div>
             </div>
