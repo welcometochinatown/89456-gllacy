@@ -281,6 +281,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/entrance-black.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 .login:hover .navigation-buttons,
@@ -302,6 +303,13 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.empty:hover::before {
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
 .two-items-card::before {
   content: "";
   position: absolute;
@@ -312,6 +320,9 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+.two-items-card:hover::before {
+  cursor: pointer;
 }
 
 .login-form a {
@@ -365,7 +376,7 @@ input[type="radio"].visually-hidden {
   left: -311px;
   width: 341px;
   position: absolute;
-  padding: 10px 15px;
+  padding: 20px 15px;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
@@ -747,7 +758,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
 }
 
 .rubl {
