@@ -255,13 +255,9 @@ input[type="radio"].visually-hidden {
   background-position: 7px 5px;
 }
 
-.user-navigation > li {
-}
-
 .user-navigation .login,
 .user-navigation .empty,
 .user-navigation .two-items-card {
-  padding-left: 15px;
   position: relative;
 }
 
@@ -299,7 +295,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 5px;
-  left: 20px;
+  left: 10px;
   width: 21px;
   height: 19px;
   background-image: url("../img/basket.svg");
@@ -311,7 +307,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 5px;
-  left: 20px;
+  left: 10px;
   width: 21px;
   height: 19px;
   background-image: url("../img/basket-red.svg");
@@ -625,6 +621,7 @@ input[type="radio"].visually-hidden {
   background-color: #9d8b84;
   background-image: url("../img/icecream-main-3.png");
 }
+
 
 .actions-list {
   display: flex;
@@ -1311,9 +1308,11 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-card-close {
+  display: inline-block;
   width: 10px;
   height: 10px;
   font-size: 0;
+  margin-bottom: 10px;
   background-position: 0 0;
   border: none;
   outline: none;
@@ -1413,16 +1412,17 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-form fieldset {
+  display: inline-block;
+  vertical-align: top;
   margin: 0;
-  margin-right: 15px;
-  padding: 0;
+  padding: 5px 17px 17px 0;
   border: none;
 }
 
 .filters legend {
+  padding-left: 16px;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 5px;
 }
 
 .form-wrapper {
@@ -1432,9 +1432,12 @@ input[type="radio"].visually-hidden {
 }
 
 .form-wrapper-border {
-  padding: 5px;
+
+  line-height: 36px;
+  height: 36px;
+  padding: 0 15px;
+  border-radius: 18px;;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
 }
 
 .filter-option {
@@ -1453,13 +1456,12 @@ input[type="radio"].visually-hidden {
 .range-controls .bar {
   width: 80%;
   height: 4px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
-  top: -9px;
+  top: 7px;
   width: 20px;
   height: 23px;
   background-image: url("../img/filter-button.svg");
@@ -1469,11 +1471,11 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle-min {
-  left: 0;
+  left: 15px;
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 65%;
 }
 
 .filter-input-radio + label::before {
@@ -1482,8 +1484,9 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
   left: -30px;
-  top: 0;
+  top: 7px;
   background-image: url("../img/checkbox-off.svg");
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1494,8 +1497,9 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
   left: -30px;
-  top: 0;
+  top: 7px;
   background-image: url("../img/checkbox-on.svg");
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1506,8 +1510,9 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
   left: -30px;
-  top: 0;
+  top: 5px;
   background-image: url("../img/radio-off.svg");
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1518,8 +1523,9 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
   left: -30px;
-  top: 0;
+  top: 5px;
   background-image: url("../img/radio-on.svg");
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1529,6 +1535,11 @@ input[type="radio"].visually-hidden {
   display: block;
   cursor: pointer;
   user-select: none;
+}
+
+.filter-input + label:hover::before,
+.filter-input + label:focus::before {
+  opacity: 1;
 }
 
 .filter-sort-form {
@@ -1587,6 +1598,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  margin-top: 5px;
   padding: 7px 26px;
   border-radius: 19px;
   border: 2px solid rgb(255, 255, 255);
