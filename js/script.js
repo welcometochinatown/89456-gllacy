@@ -1,17 +1,11 @@
 var contactsButton = document.querySelector(".contacts-button");
-
 var modalFeedback = document.querySelector(".modal-feedback");
-
 var modalClose = document.querySelector(".modal-close");
-
 var modalOverlay = document.querySelector(".modal-overlay");
-
 var feedbackName = modalFeedback.querySelector("[name=feedback-name]");
 var feedbackMail = modalFeedback.querySelector("[name=feedback-mail]");
 var feedbackMessage = modalFeedback.querySelector("[name=feedback-message]");
-
 var form = modalFeedback.querySelector("form");
-
 var isStorageSupport = true;
 var storage = "";
 
@@ -67,9 +61,6 @@ form.addEventListener("submit", function (evt) {
   }
 
 });
-
-
-
 
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
