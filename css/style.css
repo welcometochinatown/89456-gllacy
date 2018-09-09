@@ -1038,10 +1038,22 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 12px;
   display: flex;
   justify-content: flex-start;
+}
+
+.main-footer::before {
+  content: "";
+  position: absolute;
+  width: 1146px;
+  height: 1px;
+  opacity: 0.3;
+  background-color: #ffffff;
+  top: 0;
+  left: 25px;
 }
 
 .footer-social ul {
