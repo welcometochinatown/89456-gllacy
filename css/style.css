@@ -798,7 +798,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   width: 35px;
-  height: 40px;
+  height: 46px;
   font-size: 0;
   background-image: url("../img/ruble-with-shadow.svg");
   background-repeat: no-repeat;
@@ -1046,7 +1046,7 @@ a {
   justify-content: flex-start;
 }
 
-.main-footer::before {
+.main-footer-overline::before {
   content: "";
   position: absolute;
   width: 1146px;
