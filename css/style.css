@@ -27,7 +27,7 @@ a {
   min-width: 1200px;
   background-image: url("../img/icecream-main-1.png");
   background-repeat: no-repeat;
-  background-position: 188px -9px;
+  background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -43,7 +43,6 @@ a {
 
 .promo-slider .site-wrapper::after {
   background-image: url("../img/icecream-main-3.png");
-  background-position: 188px -9px;
 }
 
 .visually-hidden {
@@ -842,7 +841,7 @@ a {
 
 .features li {
   position: relative;
-  padding: 15px 0px 5px 59px;
+  padding: 15px 0px 7px 59px;
   width: 550px;
   padding-left: 60px;
 }
@@ -883,7 +882,7 @@ a {
 .features-wrapper {
   min-height: 306px;
   padding: 20px 15px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   border-radius: 15px;
   color: #323232;
   background-image: url("../img/waffle-pattern.jpg");
@@ -1040,7 +1039,8 @@ a {
 
 .main-footer {
   position: relative;
-  padding-top: 18px;
+  margin-top: 40px;
+  padding-top: 10px;
   padding-bottom: 27px;
   display: flex;
   justify-content: flex-start;
@@ -1053,7 +1053,7 @@ a {
   height: 1px;
   opacity: 0.3;
   background-color: #ffffff;
-  top: 12px;
+  top: -10px;
   left: 25px;
 }
 
@@ -1412,8 +1412,8 @@ a {
 }
 
 .page-title {
-  margin-bottom: 31px;
-  margin-top: 0;
+  margin-bottom: 25px;
+  margin-top: 5px;
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
@@ -1704,8 +1704,8 @@ a {
 }
 
 .pagination-list {
-  margin-bottom: 18px;
-  margin-top: 42px;
+  margin-bottom: 0;
+  margin-top: 45px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -1713,7 +1713,7 @@ a {
 }
 
 .pagination-item {
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 .pagination-item:last-child {

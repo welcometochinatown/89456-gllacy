@@ -64,7 +64,7 @@ form.addEventListener("submit", function (evt) {
 
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [59.939519, 30.329234],
+            center: [59.939411, 30.329513],
             zoom: 15.5
         }, {
             searchControlProvider: 'yandex#search'
