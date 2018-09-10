@@ -66,7 +66,7 @@
           </form>
         </li>
         <li class="two-items-card">
-          <a class="navigation-buttons" href="#">2 Товара</a>
+          <a class="navigation-buttons" href="#">2 товара</a>
           <div class="modal modal-card">
             <table>
               <tr>
@@ -131,7 +131,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter-form" method="post" action="http://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="filter-sort">
           <legend>Сортировка:</legend>
           <select class="filter-sort-form" name="sort">
             <option value="popularity">по популярности</option>
@@ -140,7 +140,7 @@
             <option value="richness">по жирности</option>
           </select>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-range">
           <legend>Цена: 100 руб. - 500 руб.</legend>
           <div class="form-wrapper-border">
             <label for="range" class="visually-hidden">Сортировка по цене</label>
@@ -164,7 +164,7 @@
             <label for="under-30">выше 30%</label>
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-checkbox">
           <legend>Наполнители:</legend>
           <div class="form-wrapper form-wrapper-border">
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" value="chocolate" checked>
@@ -183,7 +183,7 @@
       </form>
     </section>
 
-    <section class="catalog">
+    <section class="catalog catalog-border">
       <h2 class="visually-hidden">Список мороженого</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -195,9 +195,9 @@
           </div>
         </li>
         <li class="catalog-item">
-          <img src="img/product-2.jpg" alt="Сливочн-кофейное с кусочками шоколада" width="267" height="267">
+          <img src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           <p class="catalog-item-price">380<span class="rubl">Рубль</span><span class="weigth">/кг</span></p>
-          <h3><a class="catalog-name" href="#">Сливочн-кофейное с кусочками шоколада</a></h3>
+          <h3><a class="catalog-name" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
           <div class="item-hover">
             <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </div>
@@ -297,12 +297,12 @@
 
   </main>
 
-  <footer class="main-footer main-footer-overline container">
+  <footer class="main-footer container">
 
     <div class="footer-social">
       <ul>
         <li><a class="social-button social-twitter"><span class="visually-hidden">Twitter</span></a></li>
-        <li><a class="social-button social-Instagram"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a class="social-button social-instagram"><span class="visually-hidden">Instagram</span></a></li>
         <li><a class="social-button social-facebook"><span class="visually-hidden">Facebook</span></a></li>
         <li><a class="social-button social-vk"><span class="visually-hidden">Vk</span></a></li>
       </ul>
