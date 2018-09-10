@@ -372,7 +372,7 @@ a {
 }
 
 .login-form-wrapper .submit-button {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .login-form .form-input {
@@ -382,11 +382,10 @@ a {
 .user-navigation .login-form {
   z-index: 2;
   width: 277px;
-  top: 35px;
-  left: -202px;
-  display: none;
+  top: 32px;
+  left: -198px;
   position: absolute;
-  padding: 20px 15px;
+  padding: 22px 17px 15px;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
