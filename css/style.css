@@ -1573,7 +1573,6 @@ a {
   width: 22px;
   height: 22px;
   background-image: url("../img/radio-off.svg");
-  background-repeat: no-repeat;
 }
 
 .filter-input-radio:checked + label {
@@ -1589,7 +1588,6 @@ a {
    width: 20px;
    height: 20px;
    background-image: url("../img/checkbox-off.svg");
-   background-repeat: no-repeat;
  }
 
 .filter-input-checkbox:checked + label {
