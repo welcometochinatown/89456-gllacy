@@ -89,7 +89,7 @@ a {
   display: inline-block;
   vertical-align: top;
   padding-bottom: 5px;
-  margin-right: -7px;
+  margin-right: -3px;
 }
 
 .user-navigation a {
@@ -101,7 +101,7 @@ a {
   margin: 0;
   display: block;
   padding: 7px 15px;
-  padding-right: 16px;
+  padding-right: 12px;
   color: #ffffff;
 }
 
@@ -111,7 +111,7 @@ a {
 
 .site-navigation .main-buttons::after {
   height: 1px;
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255,255,255, 0.4);
 }
 
 .site-navigation .main-buttons:hover::after {
@@ -140,6 +140,14 @@ a {
   color: #323232;
   text-decoration: none;
   background-color: #f7f6f3;
+}
+
+.inner-menu:hover .main-catalog-button,
+.inner-menu:hover .on-catalog {
+  color: #323232;
+  text-decoration: none;
+  background-color: #f7f6f3;
+  border-radius: 15px;
 }
 
 .site-navigation .main-buttons:active {
@@ -228,6 +236,11 @@ a {
 
 .inner-site-navigation a:active {
   background-color: #f6b5a5;
+}
+
+.inner-site-navigation .inner-navigation-last {
+  padding-bottom: 13px;
+  padding-top: 7px;
 }
 
 .user-navigation {
@@ -390,6 +403,11 @@ a {
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
+}
+
+.search:hover .search-form,
+.login:hover .login-forn {
+  display: block;
 }
 
 .search-form p,
@@ -1558,13 +1576,33 @@ a {
 }
 
 .filter-checkbox {
-  padding-left: 16px;
+  padding-left: 13px;
 }
 
 .filter-checkbox label {
-  padding-left: 36px;
+  padding-left: 32px;
   padding-top: 10px;
-  margin-right: 16px;
+  margin-right: 11px;
+}
+
+.filter-zero label {
+  padding-left: 33px;
+}
+
+.filter-chocolate label {
+  margin-right: 19px;
+}
+
+.filter-sugary label {
+  margin-right: 22px;
+}
+
+.filter-fruits label {
+  margin-right: 24px;
+}
+
+.filter-syrop label {
+  margin-right: 21px;
 }
 
 .filter-input-radio + label::before{
@@ -1657,7 +1695,6 @@ a {
   vertical-align: top;
   text-decoration: none;
   color: #ffffff;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
@@ -1683,6 +1720,7 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .catalog-submit-button {
