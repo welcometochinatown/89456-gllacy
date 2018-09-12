@@ -36,6 +36,10 @@ a {
   visibility: hidden;
 }
 
+.inner-light {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.2), transparent 656px);
+}
+
 .promo-slider .site-wrapper::before {
   background-image: url("../img/icecream-main-2.png");
 }
@@ -792,7 +796,7 @@ a {
   font-size: 0;
   background-image: url("../img/ruble-with-shadow.svg");
   background-repeat: no-repeat;
-  background-position: 0 -3px;
+  background-position: -1px -2px;
   z-index: 2;
 }
 
@@ -1080,16 +1084,6 @@ a {
   background-position: 0 0;
 }
 
-.social-button:hover,
-.social-button:focus {
-  opacity: 1;
-  border: 3px solid rgba(255,255,255, 0.7);
-}
-
-.social-button:active {
-  border: 3px solid rgba(255,255,255, 0.7);
-}
-
 .social-twitter {
   background-image: url("../img/twitter.svg");
 }
@@ -1120,6 +1114,16 @@ a {
 
 .social-vk:active {
   background-image: url("../img/vk-gr.svg");
+}
+
+.social-button:hover,
+.social-button:focus {
+  opacity: 1;
+  border: 3px solid rgba(255,255,255, 0.7);
+}
+
+.social-button:active {
+  border: 3px solid rgba(255,255,255, 0.7);
 }
 
 .footer-menu {
@@ -1550,7 +1554,6 @@ a {
   content: "";
   position: absolute;
   background-size: cover;
-  left: 3px;
   opacity: 0.8;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1580,34 +1583,11 @@ a {
 }
 
 .filter-checkbox label {
-  padding-left: 34px;
+  padding-left: 33px;
   padding-top: 10px;
   margin-right: 19px;
+  min-width: 94px;
 }
-
-/*
-
-.filter-zero label {
-  padding-left: 33px;
-}
-
-.filter-choco label {
-  margin-right: 19px;
-}
-
-.filter-sugary label {
-  margin-right: 22px;
-}
-
-.filter-fruits label {
-  margin-right: 24px;
-}
-
-.filter-syrop label {
-  margin-right: 21px;
-}
-
-*/
 
 .filter-input-radio + label::before {
   top: 8px;
@@ -1615,9 +1595,7 @@ a {
   width: 22px;
   height: 22px;
   background-image: url("../img/radio-off.svg");
-  background-repeat: no-repeat;
   background-size: 22px 22px;
-  background-position: 0 0;
 }
 
 .filter-input-radio:checked + label::before {
@@ -1630,9 +1608,7 @@ a {
    width: 23px;
    height: 20px;
    background-image: url("../img/checkbox-off.svg");
-   background-repeat: no-repeat;
    background-size: 23px 20px;
-   background-position: 0 0;
  }
 
 .filter-input-checkbox:checked + label::before {
@@ -1643,17 +1619,17 @@ a {
   margin-top: 17px;
 }
 
-.filter-input + label:hover::before{
+.filter-input + label:hover::before {
   opacity: 1;
 }
 
-.filter-input:focus + label::before  {
+.filter-input:focus + label::before {
   opacity: 1;
   outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filter-input:disabled + label::before  {
+.filter-input:disabled + label::before {
   opacity: 0.4;
 }
 
@@ -1732,8 +1708,8 @@ a {
   line-height: 18px;
   color: #ffffff;
   margin-top: 39px;
-      margin-left: 8px;
-  padding: 7px 26px;
+  margin-left: 2px;
+  padding: 7px 27px;
   border-radius: 19px;
   border: 2px solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.2);
