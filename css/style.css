@@ -1764,9 +1764,7 @@ a {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  line-height: 36px;
-  min-height: 36px;
-  padding: 0 13px;
+  padding: 9px 13px;
   padding-right: 32px;
   border-radius: 18px;;
   background-color: rgba(255, 255, 255, 0.2);
