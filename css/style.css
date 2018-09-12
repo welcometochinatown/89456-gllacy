@@ -1062,7 +1062,6 @@ a {
   margin: 0 auto;
   margin-top: 17px;
   padding: 0;
-  padding-left: 1px;
 }
 
 .footer-social {
@@ -1145,7 +1144,7 @@ a {
 .footer-menu li {
   width: 185px;
   margin-bottom: 3px;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .footer-menu li:nth-child(2n) {
@@ -1205,6 +1204,10 @@ a {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.footer-copyright img {
+  padding-left: 3px;
 }
 
 .footer-copyright p {
@@ -1580,16 +1583,18 @@ a {
 }
 
 .filter-checkbox label {
-  padding-left: 32px;
+  padding-left: 34px;
   padding-top: 10px;
-  margin-right: 11px;
+  margin-right: 19px;
 }
+
+/*
 
 .filter-zero label {
   padding-left: 33px;
 }
 
-.filter-chocolate label {
+.filter-choco label {
   margin-right: 19px;
 }
 
@@ -1604,6 +1609,8 @@ a {
 .filter-syrop label {
   margin-right: 21px;
 }
+
+*/
 
 .filter-input-radio + label::before{
   top: 8px;
