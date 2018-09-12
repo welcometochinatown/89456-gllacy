@@ -745,6 +745,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1682,6 +1683,7 @@ a {
           user-select: none;
   padding-left: 25px;
   padding-top: 10px;
+
 }
 
 .form-wrapper label:last-child {
@@ -1722,9 +1724,9 @@ a {
    top: 8px;
    left: 0;
    width: 23px;
-   height: 20px;
+   height: 19px;
    background-image: url("../img/checkbox-off.svg");
-   background-size: 23px 20px;
+   background-size: contain;
  }
 
 .filter-input-checkbox:checked + label::before {
@@ -1771,7 +1773,12 @@ a {
   color: #ffffff;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
-  background-position: 166px 15px;
+  background-position: right 14px top 13px;
+  background-size: 10px 10px;
+}
+
+.filter-sort-form::-ms-expand {
+    display: none;
 }
 
 .filter-sort-form:hover,
