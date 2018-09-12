@@ -745,7 +745,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -822,7 +824,7 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .rubl {
@@ -1766,7 +1768,7 @@ a {
   border: none;
   padding: 9px 13px;
   padding-right: 32px;
-  border-radius: 18px;;
+  border-radius: 18px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   background-image: url("../img/icon-down-dir.svg");
@@ -1930,7 +1932,7 @@ a {
 
 .next {
   background-image: url("../img/icon-right-small-white.svg");
-  background-position: 12px 8px;;
+  background-position: 12px 8px;
 }
 
 .pagination-item .next:active {
