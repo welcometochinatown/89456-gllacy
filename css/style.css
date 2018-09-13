@@ -274,7 +274,6 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 2px;
   text-align: right;
   color: #ffffff;
   list-style: none;
@@ -284,7 +283,7 @@ a {
 .user-navigation .navigation-buttons {
   display: block;
   margin: 0;
-  padding: 7px 17px 8px 44px;
+  padding: 7px 17px 9px 43px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -300,7 +299,7 @@ a {
 .search-button {
   background-image: url("../img/loupe.svg");
   background-repeat: no-repeat;
-  background-position: 7px 5px;
+  background-position: 7px 7px;
 }
 
 .search:hover .search-button,
@@ -323,10 +322,10 @@ a {
 .login::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 16px;
   width: 21px;
-  height: 19px;
+  height: 20px;
   background-image: url("../img/entrance.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -347,10 +346,10 @@ a {
 .empty::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 16px;
   width: 21px;
-  height: 19px;
+  height: 20px;
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -360,7 +359,7 @@ a {
 .two-items-card::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 16px;
   width: 21px;
   height: 19px;
@@ -1137,8 +1136,7 @@ a {
 }
 
 .social-button {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   width: 38px;
   height: 38px;
   margin-right: 11px;
@@ -1146,7 +1144,9 @@ a {
   border-radius: 50%;
   opacity: 0.8;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
+  background-size: 32px 32px;
+  background-clip: padding-box;
 }
 
 .social-twitter {
